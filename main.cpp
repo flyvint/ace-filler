@@ -4,6 +4,7 @@
 #include <QFile>
 #include <QXmlSimpleReader>
 #include <QXmlInputSource>
+#include <QDir>
 
 #include <unistd.h>
 
@@ -32,9 +33,6 @@ bool convert2ods( const QString& infile, const QString& outfile )
     return true;
 }
 
-
-
-
 int main(int argc, char *argv[])
 {
     QCoreApplication a(argc, argv);
@@ -62,18 +60,22 @@ int main(int argc, char *argv[])
 
 void changeODS( const QString& odsfile)
 {
-    QString tmpdir= QString("~/tmp/ace-filler.%1").arg( getpid() );
+//    QString tmpdir= QString("~/tmp/ace-filler.%1.d").arg( odsfile );
+    QString tmpdir= QString("ace-filler.%1.d").arg( odsfile );
 
-    system( QString("mkdir -p %1").arg( tmpdir ).toLocal8Bit().constData() );
+    QDir tmpdird( tmpdir );
+    if( ! tmpdird.exists() ){
 
-    QString cmd_unzip= QString("unzip %1 -d %2").arg( odsfile ).arg( tmpdir );
-    qDebug() << "unzip cmd[" << cmd_unzip << "]";
+        system( QString("mkdir -p %1").arg( tmpdir ).toLocal8Bit().constData() );
 
-    if( system( cmd_unzip.toLocal8Bit().constData() ) != 0 ){
-        qWarning("cant unzip: ");
-        return;
+        QString cmd_unzip= QString("unzip -o %1 -d %2").arg( odsfile ).arg( tmpdir );
+        qDebug() << "unzip cmd[" << cmd_unzip << "]";
+
+        if( system( cmd_unzip.toLocal8Bit().constData() ) != 0 ){
+            qWarning("cant unzip: ");
+            return;
+        }
     }
-
 
     if( ! parseContent( QString( "%1/%2").arg(tmpdir).arg("content.xml") ) ){
         qDebug("cant parse");

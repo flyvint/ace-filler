@@ -1,0 +1,2034 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<office:document-content xmlns:office="urn:oasis:names:tc:opendocument:xmlns:office:1.0" xmlns:style="urn:oasis:names:tc:opendocument:xmlns:style:1.0" xmlns:text="urn:oasis:names:tc:opendocument:xmlns:text:1.0" xmlns:table="urn:oasis:names:tc:opendocument:xmlns:table:1.0" xmlns:draw="urn:oasis:names:tc:opendocument:xmlns:drawing:1.0" xmlns:fo="urn:oasis:names:tc:opendocument:xmlns:xsl-fo-compatible:1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:meta="urn:oasis:names:tc:opendocument:xmlns:meta:1.0" xmlns:number="urn:oasis:names:tc:opendocument:xmlns:datastyle:1.0" xmlns:presentation="urn:oasis:names:tc:opendocument:xmlns:presentation:1.0" xmlns:svg="urn:oasis:names:tc:opendocument:xmlns:svg-compatible:1.0" xmlns:chart="urn:oasis:names:tc:opendocument:xmlns:chart:1.0" xmlns:dr3d="urn:oasis:names:tc:opendocument:xmlns:dr3d:1.0" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:form="urn:oasis:names:tc:opendocument:xmlns:form:1.0" xmlns:script="urn:oasis:names:tc:opendocument:xmlns:script:1.0" xmlns:ooo="http://openoffice.org/2004/office" xmlns:ooow="http://openoffice.org/2004/writer" xmlns:oooc="http://openoffice.org/2004/calc" xmlns:dom="http://www.w3.org/2001/xml-events" xmlns:xforms="http://www.w3.org/2002/xforms" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:rpt="http://openoffice.org/2005/report" xmlns:of="urn:oasis:names:tc:opendocument:xmlns:of:1.2" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:grddl="http://www.w3.org/2003/g/data-view#" xmlns:tableooo="http://openoffice.org/2009/table" xmlns:drawooo="http://openoffice.org/2010/draw" xmlns:calcext="urn:org:documentfoundation:names:experimental:calc:xmlns:calcext:1.0" xmlns:loext="urn:org:documentfoundation:names:experimental:office:xmlns:loext:1.0" xmlns:field="urn:openoffice:names:experimental:ooo-ms-interop:xmlns:field:1.0" xmlns:formx="urn:openoffice:names:experimental:ooxml-odf-interop:xmlns:form:1.0" xmlns:css3t="http://www.w3.org/TR/css3-text/" office:version="1.2">
+  <office:scripts/>
+  <office:font-face-decls>
+    <style:font-face style:name="Arial Cyr" svg:font-family="'Arial Cyr'"/>
+    <style:font-face style:name="Segoe Print" svg:font-family="'Segoe Print'"/>
+    <style:font-face style:name="Liberation Sans" svg:font-family="'Liberation Sans'" style:font-family-generic="swiss" style:font-pitch="variable"/>
+    <style:font-face style:name="Tahoma" svg:font-family="Tahoma" style:font-family-generic="swiss" style:font-pitch="variable"/>
+    <style:font-face style:name="DejaVu Sans" svg:font-family="'DejaVu Sans'" style:font-family-generic="system" style:font-pitch="variable"/>
+    <style:font-face style:name="Droid Sans Fallback" svg:font-family="'Droid Sans Fallback'" style:font-family-generic="system" style:font-pitch="variable"/>
+  </office:font-face-decls>
+  <office:automatic-styles>
+    <style:style style:name="co1" style:family="table-column">
+      <style:table-column-properties fo:break-before="auto" style:column-width="99.29mm"/>
+    </style:style>
+    <style:style style:name="co2" style:family="table-column">
+      <style:table-column-properties fo:break-before="auto" style:column-width="21.82mm"/>
+    </style:style>
+    <style:style style:name="co3" style:family="table-column">
+      <style:table-column-properties fo:break-before="auto" style:column-width="17.9mm"/>
+    </style:style>
+    <style:style style:name="co4" style:family="table-column">
+      <style:table-column-properties fo:break-before="auto" style:column-width="10.62mm"/>
+    </style:style>
+    <style:style style:name="co5" style:family="table-column">
+      <style:table-column-properties fo:break-before="auto" style:column-width="33.85mm"/>
+    </style:style>
+    <style:style style:name="co6" style:family="table-column">
+      <style:table-column-properties fo:break-before="auto" style:column-width="36.64mm"/>
+    </style:style>
+    <style:style style:name="co7" style:family="table-column">
+      <style:table-column-properties fo:break-before="auto" style:column-width="17.74mm"/>
+    </style:style>
+    <style:style style:name="co8" style:family="table-column">
+      <style:table-column-properties fo:break-before="auto" style:column-width="79.71mm"/>
+    </style:style>
+    <style:style style:name="ro1" style:family="table-row">
+      <style:table-row-properties style:row-height="22.49mm" fo:break-before="auto" style:use-optimal-row-height="false"/>
+    </style:style>
+    <style:style style:name="ro2" style:family="table-row">
+      <style:table-row-properties style:row-height="6.88mm" fo:break-before="auto" style:use-optimal-row-height="false"/>
+    </style:style>
+    <style:style style:name="ro3" style:family="table-row">
+      <style:table-row-properties style:row-height="6.35mm" fo:break-before="auto" style:use-optimal-row-height="false"/>
+    </style:style>
+    <style:style style:name="ro4" style:family="table-row">
+      <style:table-row-properties style:row-height="65.95mm" fo:break-before="auto" style:use-optimal-row-height="false"/>
+    </style:style>
+    <style:style style:name="ro5" style:family="table-row">
+      <style:table-row-properties style:row-height="4.5mm" fo:break-before="auto" style:use-optimal-row-height="false"/>
+    </style:style>
+    <style:style style:name="ta1" style:family="table" style:master-page-name="PageStyle_5f_Белье_20_женское">
+      <style:table-properties table:display="true" style:writing-mode="lr-tb"/>
+    </style:style>
+    <style:style style:name="ta2" style:family="table" style:master-page-name="PageStyle_5f_Выборка_20_по_20_товарам">
+      <style:table-properties table:display="true" style:writing-mode="lr-tb"/>
+    </style:style>
+    <number:number-style style:name="N4">
+      <number:number number:decimal-places="2" loext:min-decimal-places="2" number:min-integer-digits="1" number:grouping="true"/>
+    </number:number-style>
+    <style:style style:name="ce1" style:family="table-cell" style:parent-style-name="Default">
+      <style:table-cell-properties style:glyph-orientation-vertical="0" fo:background-color="#ffff99" style:text-align-source="fix" style:repeat-content="false" fo:wrap-option="wrap" fo:border="none" style:direction="ltr" fo:padding="0.71mm" style:rotation-angle="0" style:rotation-align="none" style:shrink-to-fit="false" style:vertical-align="middle" loext:vertical-justify="auto"/>
+      <style:paragraph-properties fo:text-align="center" css3t:text-justify="auto" fo:margin-left="0mm" style:writing-mode="page"/>
+      <style:text-properties style:use-window-font-color="true" style:text-outline="false" style:text-line-through-style="none" style:text-line-through-type="none" style:font-name="Tahoma" fo:font-size="14pt" fo:font-style="normal" fo:text-shadow="none" style:text-underline-style="none" fo:font-weight="normal" style:font-size-asian="14pt" style:font-style-asian="normal" style:font-weight-asian="normal" style:font-name-complex="Tahoma" style:font-size-complex="14pt" style:font-style-complex="normal" style:font-weight-complex="normal"/>
+    </style:style>
+    <style:style style:name="ce2" style:family="table-cell" style:parent-style-name="Default">
+      <style:table-cell-properties style:glyph-orientation-vertical="0" style:text-align-source="fix" style:repeat-content="false" fo:wrap-option="no-wrap" fo:border="none" style:direction="ltr" fo:padding="0.71mm" style:rotation-angle="0" style:rotation-align="none" style:shrink-to-fit="false" style:vertical-align="automatic" loext:vertical-justify="auto"/>
+      <style:paragraph-properties fo:text-align="center" css3t:text-justify="auto" fo:margin-left="0mm" style:writing-mode="page"/>
+      <style:text-properties style:use-window-font-color="true" style:text-outline="false" style:text-line-through-style="none" style:text-line-through-type="none" style:font-name="Tahoma" fo:font-size="16pt" fo:font-style="normal" fo:text-shadow="none" style:text-underline-style="none" fo:font-weight="bold" style:font-size-asian="16pt" style:font-style-asian="normal" style:font-weight-asian="bold" style:font-name-complex="Tahoma" style:font-size-complex="16pt" style:font-style-complex="normal" style:font-weight-complex="bold"/>
+    </style:style>
+    <style:style style:name="ce3" style:family="table-cell" style:parent-style-name="Default">
+      <style:table-cell-properties fo:padding="0.71mm"/>
+      <style:text-properties style:use-window-font-color="true" style:text-outline="false" style:text-line-through-style="none" style:text-line-through-type="none" style:font-name="Tahoma" fo:font-size="14pt" fo:font-style="normal" fo:text-shadow="none" style:text-underline-style="none" fo:font-weight="normal" style:font-size-asian="14pt" style:font-style-asian="normal" style:font-weight-asian="normal" style:font-name-complex="Tahoma" style:font-size-complex="14pt" style:font-style-complex="normal" style:font-weight-complex="normal"/>
+    </style:style>
+    <style:style style:name="ce4" style:family="table-cell" style:parent-style-name="Default" style:data-style-name="N131">
+      <style:table-cell-properties fo:padding="0.71mm"/>
+      <style:text-properties style:use-window-font-color="true" style:text-outline="false" style:text-line-through-style="none" style:text-line-through-type="none" style:font-name="Tahoma" fo:font-size="14pt" fo:font-style="normal" fo:text-shadow="none" style:text-underline-style="none" fo:font-weight="bold" style:font-size-asian="14pt" style:font-style-asian="normal" style:font-weight-asian="bold" style:font-name-complex="Tahoma" style:font-size-complex="14pt" style:font-style-complex="normal" style:font-weight-complex="bold"/>
+    </style:style>
+    <style:style style:name="ce5" style:family="table-cell" style:parent-style-name="Default" style:data-style-name="N131">
+      <style:table-cell-properties fo:background-color="#00ffff" fo:padding="0.71mm"/>
+      <style:text-properties style:use-window-font-color="true" style:text-outline="false" style:text-line-through-style="none" style:text-line-through-type="none" style:font-name="Tahoma" fo:font-size="14pt" fo:font-style="normal" fo:text-shadow="none" style:text-underline-style="none" fo:font-weight="bold" style:font-size-asian="14pt" style:font-style-asian="normal" style:font-weight-asian="bold" style:font-name-complex="Tahoma" style:font-size-complex="14pt" style:font-style-complex="normal" style:font-weight-complex="bold"/>
+    </style:style>
+    <style:style style:name="ce6" style:family="table-cell" style:parent-style-name="Default" style:data-style-name="N131">
+      <style:table-cell-properties fo:padding="0.71mm"/>
+      <style:text-properties style:use-window-font-color="true" style:text-outline="false" style:text-line-through-style="none" style:text-line-through-type="none" style:font-name="Tahoma" fo:font-size="14pt" fo:font-style="normal" fo:text-shadow="none" style:text-underline-style="none" fo:font-weight="normal" style:font-size-asian="14pt" style:font-style-asian="normal" style:font-weight-asian="normal" style:font-name-complex="Tahoma" style:font-size-complex="14pt" style:font-style-complex="normal" style:font-weight-complex="normal"/>
+    </style:style>
+    <style:style style:name="ce7" style:family="table-cell" style:parent-style-name="Default">
+      <style:table-cell-properties style:glyph-orientation-vertical="0" style:text-align-source="value-type" style:repeat-content="false" fo:wrap-option="wrap" style:direction="ltr" fo:padding="0.71mm" style:rotation-angle="0" style:rotation-align="none" style:shrink-to-fit="false" style:vertical-align="automatic" loext:vertical-justify="auto"/>
+      <style:paragraph-properties css3t:text-justify="auto" fo:margin-left="0mm" style:writing-mode="page"/>
+      <style:text-properties style:use-window-font-color="true" style:text-outline="false" style:text-line-through-style="none" style:text-line-through-type="none" style:font-name="Tahoma" fo:font-size="14pt" fo:font-style="normal" fo:text-shadow="none" style:text-underline-style="none" fo:font-weight="normal" style:font-size-asian="14pt" style:font-style-asian="normal" style:font-weight-asian="normal" style:font-name-complex="Tahoma" style:font-size-complex="14pt" style:font-style-complex="normal" style:font-weight-complex="normal"/>
+    </style:style>
+    <style:style style:name="ce8" style:family="table-cell" style:parent-style-name="Default">
+      <style:table-cell-properties fo:background-color="#ff8080" fo:padding="0.71mm"/>
+      <style:text-properties style:use-window-font-color="true" style:text-outline="false" style:text-line-through-style="none" style:text-line-through-type="none" style:font-name="Tahoma" fo:font-size="14pt" fo:font-style="normal" fo:text-shadow="none" style:text-underline-style="none" fo:font-weight="bold" style:font-size-asian="14pt" style:font-style-asian="normal" style:font-weight-asian="bold" style:font-name-complex="Tahoma" style:font-size-complex="14pt" style:font-style-complex="normal" style:font-weight-complex="bold"/>
+    </style:style>
+    <style:style style:name="ce9" style:family="table-cell" style:parent-style-name="Default">
+      <style:table-cell-properties style:glyph-orientation-vertical="0" fo:background-color="#ffff99" style:text-align-source="fix" style:repeat-content="false" fo:wrap-option="wrap" style:direction="ltr" fo:padding="0.71mm" style:rotation-angle="0" style:rotation-align="none" style:shrink-to-fit="false" style:vertical-align="middle" loext:vertical-justify="auto"/>
+      <style:paragraph-properties fo:text-align="center" css3t:text-justify="auto" fo:margin-left="0mm" style:writing-mode="page"/>
+      <style:text-properties style:use-window-font-color="true" style:text-outline="false" style:text-line-through-style="none" style:text-line-through-type="none" style:font-name="Tahoma" fo:font-size="14pt" fo:font-style="normal" fo:text-shadow="none" style:text-underline-style="none" fo:font-weight="normal" style:font-size-asian="14pt" style:font-style-asian="normal" style:font-weight-asian="normal" style:font-name-complex="Tahoma" style:font-size-complex="14pt" style:font-style-complex="normal" style:font-weight-complex="normal"/>
+    </style:style>
+    <style:style style:name="ce10" style:family="table-cell" style:parent-style-name="Default">
+      <style:table-cell-properties style:glyph-orientation-vertical="0" style:text-align-source="fix" style:repeat-content="false" fo:wrap-option="no-wrap" style:direction="ltr" fo:padding="0.71mm" style:rotation-angle="0" style:rotation-align="none" style:shrink-to-fit="false" style:vertical-align="automatic" loext:vertical-justify="auto"/>
+      <style:paragraph-properties fo:text-align="center" css3t:text-justify="auto" fo:margin-left="0mm" style:writing-mode="page"/>
+      <style:text-properties style:use-window-font-color="true" style:text-outline="false" style:text-line-through-style="none" style:text-line-through-type="none" style:font-name="Tahoma" fo:font-size="16pt" fo:font-style="normal" fo:text-shadow="none" style:text-underline-style="none" fo:font-weight="bold" style:font-size-asian="16pt" style:font-style-asian="normal" style:font-weight-asian="bold" style:font-name-complex="Tahoma" style:font-size-complex="16pt" style:font-style-complex="normal" style:font-weight-complex="bold"/>
+    </style:style>
+    <style:style style:name="ce11" style:family="table-cell" style:parent-style-name="Default">
+      <style:table-cell-properties fo:padding="0.71mm"/>
+      <style:text-properties style:use-window-font-color="true" style:text-outline="false" style:text-line-through-style="none" style:text-line-through-type="none" style:font-name="Tahoma" fo:font-size="10pt" fo:font-style="normal" fo:text-shadow="none" style:text-underline-style="none" fo:font-weight="normal" style:font-size-asian="10pt" style:font-style-asian="normal" style:font-weight-asian="normal" style:font-name-complex="Tahoma" style:font-size-complex="10pt" style:font-style-complex="normal" style:font-weight-complex="normal"/>
+    </style:style>
+    <style:style style:name="ce12" style:family="table-cell" style:parent-style-name="Default">
+      <style:table-cell-properties fo:padding="0.71mm"/>
+      <style:text-properties style:use-window-font-color="true" style:text-outline="false" style:text-line-through-style="none" style:text-line-through-type="none" style:font-name="Tahoma" fo:font-size="14pt" fo:font-style="normal" fo:text-shadow="none" style:text-underline-style="none" fo:font-weight="bold" style:font-size-asian="14pt" style:font-style-asian="normal" style:font-weight-asian="bold" style:font-name-complex="Tahoma" style:font-size-complex="14pt" style:font-style-complex="normal" style:font-weight-complex="bold"/>
+    </style:style>
+    <style:style style:name="ce13" style:family="table-cell" style:parent-style-name="Default" style:data-style-name="N4">
+      <style:table-cell-properties fo:background-color="#00ffff" fo:padding="0.71mm"/>
+      <style:text-properties style:use-window-font-color="true" style:text-outline="false" style:text-line-through-style="none" style:text-line-through-type="none" style:font-name="Tahoma" fo:font-size="10pt" fo:font-style="normal" fo:text-shadow="none" style:text-underline-style="none" fo:font-weight="bold" style:font-size-asian="10pt" style:font-style-asian="normal" style:font-weight-asian="bold" style:font-name-complex="Tahoma" style:font-size-complex="10pt" style:font-style-complex="normal" style:font-weight-complex="bold"/>
+    </style:style>
+    <style:style style:name="ce14" style:family="table-cell" style:parent-style-name="Default">
+      <style:table-cell-properties fo:background-color="#ff8080" fo:padding="0.71mm"/>
+      <style:text-properties style:use-window-font-color="true" style:text-outline="false" style:text-line-through-style="none" style:text-line-through-type="none" style:font-name="Tahoma" fo:font-size="10pt" fo:font-style="normal" fo:text-shadow="none" style:text-underline-style="none" fo:font-weight="bold" style:font-size-asian="10pt" style:font-style-asian="normal" style:font-weight-asian="bold" style:font-name-complex="Tahoma" style:font-size-complex="10pt" style:font-style-complex="normal" style:font-weight-complex="bold"/>
+    </style:style>
+    <style:style style:name="ce15" style:family="table-cell" style:parent-style-name="Default">
+      <style:table-cell-properties fo:padding="0.71mm"/>
+      <style:text-properties style:use-window-font-color="true" style:text-outline="false" style:text-line-through-style="none" style:text-line-through-type="none" style:font-name="Tahoma" fo:font-size="10pt" fo:font-style="normal" fo:text-shadow="none" style:text-underline-style="none" fo:font-weight="bold" style:font-size-asian="10pt" style:font-style-asian="normal" style:font-weight-asian="bold" style:font-name-complex="Tahoma" style:font-size-complex="10pt" style:font-style-complex="normal" style:font-weight-complex="bold"/>
+    </style:style>
+    <style:style style:name="ce16" style:family="table-cell" style:parent-style-name="Default">
+      <style:table-cell-properties fo:background-color="#00ffff" fo:padding="0.71mm"/>
+      <style:text-properties style:use-window-font-color="true" style:text-outline="false" style:text-line-through-style="none" style:text-line-through-type="none" style:font-name="Tahoma" fo:font-size="10pt" fo:font-style="normal" fo:text-shadow="none" style:text-underline-style="none" fo:font-weight="bold" style:font-size-asian="10pt" style:font-style-asian="normal" style:font-weight-asian="bold" style:font-name-complex="Tahoma" style:font-size-complex="10pt" style:font-style-complex="normal" style:font-weight-complex="bold"/>
+    </style:style>
+    <style:style style:name="ce17" style:family="table-cell" style:parent-style-name="Default" style:data-style-name="N4">
+      <style:table-cell-properties fo:background-color="#ff8080" fo:padding="0.71mm"/>
+      <style:text-properties style:use-window-font-color="true" style:text-outline="false" style:text-line-through-style="none" style:text-line-through-type="none" style:font-name="Tahoma" fo:font-size="10pt" fo:font-style="normal" fo:text-shadow="none" style:text-underline-style="none" fo:font-weight="bold" style:font-size-asian="10pt" style:font-style-asian="normal" style:font-weight-asian="bold" style:font-name-complex="Tahoma" style:font-size-complex="10pt" style:font-style-complex="normal" style:font-weight-complex="bold"/>
+    </style:style>
+    <style:style style:name="ce18" style:family="table-cell" style:parent-style-name="Default" style:data-style-name="N4">
+      <style:table-cell-properties fo:padding="0.71mm"/>
+      <style:text-properties style:use-window-font-color="true" style:text-outline="false" style:text-line-through-style="none" style:text-line-through-type="none" style:font-name="Tahoma" fo:font-size="10pt" fo:font-style="normal" fo:text-shadow="none" style:text-underline-style="none" fo:font-weight="normal" style:font-size-asian="10pt" style:font-style-asian="normal" style:font-weight-asian="normal" style:font-name-complex="Tahoma" style:font-size-complex="10pt" style:font-style-complex="normal" style:font-weight-complex="normal"/>
+    </style:style>
+    <style:style style:name="ce19" style:family="table-cell" style:parent-style-name="Default">
+      <style:table-cell-properties fo:padding="0.71mm"/>
+    </style:style>
+    <style:style style:name="ce20" style:family="table-cell" style:parent-style-name="Default">
+      <style:table-cell-properties fo:padding="0.71mm"/>
+      <style:text-properties style:use-window-font-color="true" style:text-outline="false" style:text-line-through-style="none" style:text-line-through-type="none" style:font-name="Arial Cyr" fo:font-size="14pt" fo:font-style="normal" fo:text-shadow="none" style:text-underline-style="none" fo:font-weight="bold" style:font-size-asian="14pt" style:font-style-asian="normal" style:font-weight-asian="bold" style:font-name-complex="Arial Cyr" style:font-size-complex="14pt" style:font-style-complex="normal" style:font-weight-complex="bold"/>
+    </style:style>
+    <style:style style:name="gr1" style:family="graphic">
+      <style:graphic-properties draw:stroke="none" draw:fill="none" draw:fill-color="#ffffff" draw:textarea-horizontal-align="justify" draw:textarea-vertical-align="top" draw:auto-grow-height="false" fo:padding-top="1.3mm" fo:padding-bottom="1.3mm" fo:padding-left="2.5mm" fo:padding-right="2.5mm" fo:wrap-option="wrap" draw:shadow-color="#808080" draw:color-mode="standard" draw:luminance="0%" draw:contrast="0%" draw:gamma="100%" draw:red="0%" draw:green="0%" draw:blue="0%" fo:clip="rect(0mm, 0mm, 0mm, 0mm)" draw:image-opacity="100%" style:mirror="none"/>
+    </style:style>
+    <style:style style:name="P1" style:family="paragraph">
+      <loext:graphic-properties draw:fill="none" draw:fill-color="#ffffff"/>
+      <style:paragraph-properties fo:text-align="center" style:writing-mode="lr-tb"/>
+    </style:style>
+    <style:style style:name="T1" style:family="text">
+      <style:text-properties style:font-size-asian="28pt" fo:text-shadow="none" style:font-name-complex="Segoe Print" style:font-style-complex="normal" style:text-position="0% 100%" style:font-style-asian="normal" style:font-weight-complex="bold" style:font-weight-asian="bold" style:font-size-complex="28pt" style:text-outline="false" fo:font-style="normal" style:text-line-through-type="none" style:text-underline-style="none" style:text-underline-color="font-color" fo:font-weight="bold" fo:font-size="28pt" style:font-name="Segoe Print" fo:color="#ff6600"/>
+    </style:style>
+    <style:style style:name="T2" style:family="text">
+      <style:text-properties style:font-size-asian="28pt" fo:text-shadow="none" style:font-style-complex="normal" style:text-position="0% 100%" style:font-style-asian="normal" style:font-weight-complex="bold" style:font-weight-asian="bold" style:font-size-complex="28pt" style:text-outline="false" fo:font-style="normal" style:text-line-through-type="none" style:text-underline-style="none" style:text-underline-color="font-color" fo:font-weight="bold" fo:font-size="28pt" fo:color="#ff6600" style:font-name="Tahoma" style:font-name-complex="Tahoma"/>
+    </style:style>
+    <style:style style:name="T3" style:family="text">
+      <style:text-properties style:font-size-asian="28pt" fo:text-shadow="none" style:font-style-complex="normal" style:text-position="0% 100%" style:font-style-asian="normal" style:font-size-complex="28pt" style:text-outline="false" fo:font-style="normal" style:text-line-through-type="none" style:text-underline-style="none" style:text-underline-color="font-color" fo:font-size="28pt" style:font-name="Tahoma" style:font-name-complex="Tahoma" style:font-weight-asian="normal" style:font-weight-complex="normal" fo:font-weight="normal"/>
+    </style:style>
+    <style:style style:name="T4" style:family="text">
+      <style:text-properties fo:text-shadow="none" style:font-style-complex="normal" style:text-position="0% 100%" style:font-style-asian="normal" style:text-outline="false" fo:font-style="normal" style:text-line-through-type="none" style:text-underline-style="none" style:text-underline-color="font-color" style:font-name="Tahoma" style:font-name-complex="Tahoma" style:font-weight-asian="normal" style:font-weight-complex="normal" fo:font-weight="normal" fo:font-size="14pt" style:font-size-asian="14pt" style:font-size-complex="14pt"/>
+    </style:style>
+    <style:style style:name="T5" style:family="text">
+      <style:text-properties fo:text-shadow="none" style:font-style-complex="normal" style:text-position="0% 100%" style:font-style-asian="normal" style:text-outline="false" fo:font-style="normal" style:text-line-through-type="none" style:text-underline-style="none" style:text-underline-color="font-color" style:font-name="Tahoma" style:font-name-complex="Tahoma" style:font-weight-asian="normal" style:font-weight-complex="normal" fo:font-weight="normal" fo:font-size="16pt" style:font-size-asian="16pt" style:font-size-complex="16pt"/>
+    </style:style>
+    <style:style style:name="T6" style:family="text">
+      <style:text-properties fo:text-shadow="none" style:text-position="0% 100%" style:text-outline="false" style:text-line-through-type="none" style:text-underline-style="none" style:text-underline-color="font-color" style:font-name="Tahoma" style:font-name-complex="Tahoma" fo:font-size="16pt" style:font-size-asian="16pt" style:font-size-complex="16pt" fo:font-weight="bold" fo:font-style="italic" style:font-weight-asian="bold" style:font-weight-complex="bold" style:font-style-asian="italic" style:font-style-complex="italic"/>
+    </style:style>
+  </office:automatic-styles>
+  <office:body>
+    <office:spreadsheet>
+      <table:calculation-settings table:case-sensitive="false" table:automatic-find-labels="false" table:use-regular-expressions="false" table:use-wildcards="true"/>
+      <table:table table:name="Белье женское" table:style-name="ta1">
+        <office:forms form:automatic-focus="false" form:apply-design-mode="false"/>
+        <table:table-column table:style-name="co1" table:default-cell-style-name="ce3"/>
+        <table:table-column table:style-name="co2" table:default-cell-style-name="ce11"/>
+        <table:table-column table:style-name="co3" table:number-columns-repeated="2" table:default-cell-style-name="ce11"/>
+        <table:table-column table:style-name="co4" table:number-columns-repeated="10" table:default-cell-style-name="ce11"/>
+        <table:table-column table:style-name="co5" table:default-cell-style-name="ce11"/>
+        <table:table-column table:style-name="co3" table:default-cell-style-name="ce11"/>
+        <table:table-column table:style-name="co6" table:default-cell-style-name="ce11"/>
+        <table:table-column table:style-name="co3" table:number-columns-repeated="5" table:default-cell-style-name="ce11"/>
+        <table:table-column table:style-name="co7" table:visibility="collapse" table:number-columns-repeated="2" table:default-cell-style-name="ce11"/>
+        <table:table-column table:style-name="co3" table:number-columns-repeated="233" table:default-cell-style-name="ce11"/>
+        <table:table-column table:style-name="co3" table:number-columns-repeated="767" table:default-cell-style-name="Default"/>
+        <table:table-row table:style-name="ro1">
+          <table:table-cell table:style-name="ce1" office:value-type="string" calcext:value-type="string" table:number-columns-spanned="17" table:number-rows-spanned="1">
+            <text:p>
+              <text:span text:style-name="T1">Сказочный Лес</text:span>
+              <text:span text:style-name="T2"> </text:span>
+              <text:span text:style-name="T3"> </text:span>
+              <text:span text:style-name="T4">                                                                                                                                                                                                        </text:span>
+              <text:span text:style-name="T5">Главной темой блока выбран сказочный лес, поэтому неудивительно, что модели выполнены в романтическом стиле, а в принтах и набивках можно увидеть обитателей этого леса. Известные с детства сказочные персонажи животных на полотне, окуная в родную среду, которая кажется светится изнутри на игре контраста темных теней силуэтов и неоднородного бежевого меланжа. Лесную тематику поддерживает и фурнитура - это вшивки с изображением орешка желудь. Коллекция пропитана неринужденностью, легкостью и какой-то добротой.                                                                                                 </text:span>
+              <text:span text:style-name="T6">*ЦЕНЫ ПРЕДВАРИТЕЛЬНЫЕ</text:span>
+            </text:p>
+          </table:table-cell>
+          <table:covered-table-cell table:number-columns-repeated="16" table:style-name="ce9"/>
+          <table:table-cell table:number-columns-repeated="1007"/>
+        </table:table-row>
+        <table:table-row table:style-name="ro2">
+          <table:table-cell table:style-name="ce2" office:value-type="string" calcext:value-type="string" table:number-columns-spanned="15" table:number-rows-spanned="1">
+            <text:p>Бланк предзаказа на 30.06.2016</text:p>
+          </table:table-cell>
+          <table:covered-table-cell table:number-columns-repeated="14" table:style-name="ce10"/>
+          <table:table-cell table:number-columns-repeated="1009"/>
+        </table:table-row>
+        <table:table-row table:style-name="ro3" table:number-rows-repeated="2">
+          <table:table-cell table:number-columns-repeated="1024"/>
+        </table:table-row>
+        <table:table-row table:style-name="ro3">
+          <table:table-cell table:style-name="ce4" office:value-type="string" calcext:value-type="string">
+            <text:p>Белье женское</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="ce12" office:value-type="string" calcext:value-type="string">
+            <text:p>Цена</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="ce15" table:number-columns-repeated="2"/>
+          <table:table-cell table:style-name="ce15" office:value-type="string" calcext:value-type="string">
+            <text:p>р42</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="ce15" office:value-type="string" calcext:value-type="string">
+            <text:p>р44</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="ce15" office:value-type="string" calcext:value-type="string">
+            <text:p>р46</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="ce15" office:value-type="string" calcext:value-type="string">
+            <text:p>р48</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="ce15" office:value-type="string" calcext:value-type="string">
+            <text:p>р50</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="ce15" office:value-type="string" calcext:value-type="string">
+            <text:p>р52</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="ce15" office:value-type="string" calcext:value-type="string">
+            <text:p>р54</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="ce15" office:value-type="string" calcext:value-type="string">
+            <text:p>р56</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="ce15" office:value-type="string" calcext:value-type="string">
+            <text:p>р58</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="ce15" office:value-type="string" calcext:value-type="string">
+            <text:p>р60</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="ce12" office:value-type="string" calcext:value-type="string">
+            <text:p>Сумма (цв)</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="ce15"/>
+          <table:table-cell table:style-name="ce12" office:value-type="string" calcext:value-type="string">
+            <text:p>Сумма (арт)</text:p>
+          </table:table-cell>
+          <table:table-cell table:number-columns-repeated="1007"/>
+        </table:table-row>
+        <table:table-row table:style-name="ro3">
+          <table:table-cell table:style-name="ce5" office:value-type="string" calcext:value-type="string">
+            <text:p>CLE B545 Бикини жен.Сказ.Лес</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="ce13" office:value-type="float" office:value="150" calcext:value-type="float">
+            <text:p>150,00</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="ce16" table:number-columns-repeated="2"/>
+          <table:table-cell table:style-name="ce16" office:value-type="string" calcext:value-type="string">
+            <text:p>р42</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="ce16" office:value-type="string" calcext:value-type="string">
+            <text:p>р44</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="ce16" office:value-type="string" calcext:value-type="string">
+            <text:p>р46</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="ce16" office:value-type="string" calcext:value-type="string">
+            <text:p>р48</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="ce16" office:value-type="string" calcext:value-type="string">
+            <text:p>р50</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="ce16" office:value-type="string" calcext:value-type="string">
+            <text:p>р52</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="ce16" office:value-type="string" calcext:value-type="string">
+            <text:p>р54</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="ce16" office:value-type="string" calcext:value-type="string">
+            <text:p>р56</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="ce16" office:value-type="string" calcext:value-type="string">
+            <text:p>р58</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="ce16" office:value-type="string" calcext:value-type="string">
+            <text:p>р60</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="ce16" office:value-type="string" calcext:value-type="string">
+            <text:p>Всего</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="ce16" table:number-columns-repeated="2"/>
+          <table:table-cell table:number-columns-repeated="1007"/>
+        </table:table-row>
+        <table:table-row-group>
+          <table:table-row table:style-name="ro3">
+            <table:table-cell table:style-name="ce6" office:value-type="string" calcext:value-type="string">
+              <text:p>Цвет: меланж бежевый/т.серый</text:p>
+            </table:table-cell>
+            <table:table-cell table:number-columns-repeated="13"/>
+            <table:table-cell table:formula="of:=SUM([.E7:.N7])" office:value-type="float" office:value="0" calcext:value-type="float">
+              <text:p>0</text:p>
+            </table:table-cell>
+            <table:table-cell/>
+            <table:table-cell table:style-name="ce18" table:formula="of:=[.B6]*[.O7]" office:value-type="float" office:value="0" calcext:value-type="float">
+              <text:p>0,00</text:p>
+            </table:table-cell>
+            <table:table-cell table:number-columns-repeated="5"/>
+            <table:table-cell office:value-type="float" office:value="444635" calcext:value-type="float">
+              <text:p>444635</text:p>
+            </table:table-cell>
+            <table:table-cell office:value-type="float" office:value="5810" calcext:value-type="float">
+              <text:p>5810</text:p>
+            </table:table-cell>
+            <table:table-cell table:number-columns-repeated="1000"/>
+          </table:table-row>
+          <table:table-row table:style-name="ro4">
+            <table:table-cell table:style-name="ce7" office:value-type="string" calcext:value-type="string">
+              <text:p/>
+              <text:p/>
+              <text:p>Состав: 92% Хлопок 8% Эластан</text:p>
+            </table:table-cell>
+            <table:table-cell/>
+            <table:table-cell>
+              <draw:a xlink:type="simple" xlink:href="http://ftp.acewear.ru/public/Photo/44463558102.jpeg">
+                <draw:frame table:end-cell-address="'Белье женское'.F8" table:end-x="4.2mm" table:end-y="65.7mm" draw:z-index="0" draw:name="Picture 1" draw:style-name="gr1" draw:text-style-name="P1" svg:width="49.22mm" svg:height="65.43mm" svg:x="1.41mm" svg:y="0.27mm">
+                  <draw:image xlink:href="Pictures/10000000000003E80000057871CA3CD1C9FD05DB.jpg" xlink:type="simple" xlink:show="embed" xlink:actuate="onLoad">
+                    <text:p/>
+                  </draw:image>
+                  <svg:desc>temp82550</svg:desc>
+                </draw:frame>
+              </draw:a>
+            </table:table-cell>
+            <table:table-cell table:number-columns-repeated="4"/>
+            <table:table-cell>
+              <draw:a xlink:type="simple" xlink:href="http://ftp.acewear.ru/public/Photo/44463558101.jpeg">
+                <draw:frame table:end-cell-address="'Белье женское'.M8" table:end-x="4.48mm" table:end-y="65.7mm" draw:z-index="1" draw:name="Picture 2" draw:style-name="gr1" draw:text-style-name="P1" svg:width="49.19mm" svg:height="65.43mm" svg:x="8.38mm" svg:y="0.27mm">
+                  <draw:image xlink:href="Pictures/10000000000003E8000005786A60D4556E1AD57C.jpg" xlink:type="simple" xlink:show="embed" xlink:actuate="onLoad">
+                    <text:p/>
+                  </draw:image>
+                  <svg:desc>temp82550</svg:desc>
+                </draw:frame>
+              </draw:a>
+            </table:table-cell>
+            <table:table-cell table:number-columns-repeated="1016"/>
+          </table:table-row>
+        </table:table-row-group>
+        <table:table-row table:style-name="ro3">
+          <table:table-cell office:value-type="string" calcext:value-type="string">
+            <text:p>Итого</text:p>
+          </table:table-cell>
+          <table:table-cell table:number-columns-repeated="13"/>
+          <table:table-cell table:formula="of:=SUM([.O7:.O8])" office:value-type="float" office:value="0" calcext:value-type="float">
+            <text:p>0</text:p>
+          </table:table-cell>
+          <table:table-cell/>
+          <table:table-cell table:style-name="ce18" table:formula="of:=SUM([.Q7:.Q8])" office:value-type="float" office:value="0" calcext:value-type="float">
+            <text:p>0,00</text:p>
+          </table:table-cell>
+          <table:table-cell table:number-columns-repeated="1007"/>
+        </table:table-row>
+        <table:table-row table:style-name="ro3">
+          <table:table-cell table:style-name="ce5" office:value-type="string" calcext:value-type="string">
+            <text:p>CLE B545/1 Бикини жен.Сказ.Леc</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="ce13" office:value-type="float" office:value="150" calcext:value-type="float">
+            <text:p>150,00</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="ce16" table:number-columns-repeated="2"/>
+          <table:table-cell table:style-name="ce16" office:value-type="string" calcext:value-type="string">
+            <text:p>р42</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="ce16" office:value-type="string" calcext:value-type="string">
+            <text:p>р44</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="ce16" office:value-type="string" calcext:value-type="string">
+            <text:p>р46</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="ce16" office:value-type="string" calcext:value-type="string">
+            <text:p>р48</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="ce16" office:value-type="string" calcext:value-type="string">
+            <text:p>р50</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="ce16" office:value-type="string" calcext:value-type="string">
+            <text:p>р52</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="ce16" office:value-type="string" calcext:value-type="string">
+            <text:p>р54</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="ce16" office:value-type="string" calcext:value-type="string">
+            <text:p>р56</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="ce16" office:value-type="string" calcext:value-type="string">
+            <text:p>р58</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="ce16" office:value-type="string" calcext:value-type="string">
+            <text:p>р60</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="ce16" office:value-type="string" calcext:value-type="string">
+            <text:p>Всего</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="ce16" table:number-columns-repeated="2"/>
+          <table:table-cell table:number-columns-repeated="1007"/>
+        </table:table-row>
+        <table:table-row-group>
+          <table:table-row table:style-name="ro3">
+            <table:table-cell table:style-name="ce6" office:value-type="string" calcext:value-type="string">
+              <text:p>Цвет: св.розовый</text:p>
+            </table:table-cell>
+            <table:table-cell table:number-columns-repeated="13"/>
+            <table:table-cell table:formula="of:=SUM([.E11:.N11])" office:value-type="float" office:value="0" calcext:value-type="float">
+              <text:p>0</text:p>
+            </table:table-cell>
+            <table:table-cell/>
+            <table:table-cell table:style-name="ce18" table:formula="of:=[.B10]*[.O11]" office:value-type="float" office:value="0" calcext:value-type="float">
+              <text:p>0,00</text:p>
+            </table:table-cell>
+            <table:table-cell table:number-columns-repeated="5"/>
+            <table:table-cell office:value-type="float" office:value="444657" calcext:value-type="float">
+              <text:p>444657</text:p>
+            </table:table-cell>
+            <table:table-cell office:value-type="float" office:value="5890" calcext:value-type="float">
+              <text:p>5890</text:p>
+            </table:table-cell>
+            <table:table-cell table:number-columns-repeated="1000"/>
+          </table:table-row>
+          <table:table-row table:style-name="ro4">
+            <table:table-cell table:style-name="ce7" office:value-type="string" calcext:value-type="string">
+              <text:p/>
+              <text:p/>
+              <text:p>Состав: 92% Хлопок, 8% Эластан</text:p>
+            </table:table-cell>
+            <table:table-cell/>
+            <table:table-cell>
+              <draw:a xlink:type="simple" xlink:href="http://ftp.acewear.ru/public/Photo/44465758902.jpeg">
+                <draw:frame table:end-cell-address="'Белье женское'.F12" table:end-x="4.2mm" table:end-y="65.69mm" draw:z-index="2" draw:name="Picture 3" draw:style-name="gr1" draw:text-style-name="P1" svg:width="49.22mm" svg:height="65.43mm" svg:x="1.41mm" svg:y="0.26mm">
+                  <draw:image xlink:href="Pictures/10000000000003E80000057881ECF05CF677AE82.jpg" xlink:type="simple" xlink:show="embed" xlink:actuate="onLoad">
+                    <text:p/>
+                  </draw:image>
+                  <svg:desc>temp82550</svg:desc>
+                </draw:frame>
+              </draw:a>
+            </table:table-cell>
+            <table:table-cell table:number-columns-repeated="4"/>
+            <table:table-cell>
+              <draw:a xlink:type="simple" xlink:href="http://ftp.acewear.ru/public/Photo/44465758901.jpeg">
+                <draw:frame table:end-cell-address="'Белье женское'.M12" table:end-x="4.48mm" table:end-y="65.69mm" draw:z-index="3" draw:name="Picture 4" draw:style-name="gr1" draw:text-style-name="P1" svg:width="49.19mm" svg:height="65.43mm" svg:x="8.38mm" svg:y="0.26mm">
+                  <draw:image xlink:href="Pictures/10000000000003E800000578D97F97E6C97C25BC.jpg" xlink:type="simple" xlink:show="embed" xlink:actuate="onLoad">
+                    <text:p/>
+                  </draw:image>
+                  <svg:desc>temp82550</svg:desc>
+                </draw:frame>
+              </draw:a>
+            </table:table-cell>
+            <table:table-cell table:number-columns-repeated="1016"/>
+          </table:table-row>
+        </table:table-row-group>
+        <table:table-row table:style-name="ro3">
+          <table:table-cell office:value-type="string" calcext:value-type="string">
+            <text:p>Итого</text:p>
+          </table:table-cell>
+          <table:table-cell table:number-columns-repeated="13"/>
+          <table:table-cell table:formula="of:=SUM([.O11:.O12])" office:value-type="float" office:value="0" calcext:value-type="float">
+            <text:p>0</text:p>
+          </table:table-cell>
+          <table:table-cell/>
+          <table:table-cell table:style-name="ce18" table:formula="of:=SUM([.Q11:.Q12])" office:value-type="float" office:value="0" calcext:value-type="float">
+            <text:p>0,00</text:p>
+          </table:table-cell>
+          <table:table-cell table:number-columns-repeated="1007"/>
+        </table:table-row>
+        <table:table-row table:style-name="ro3">
+          <table:table-cell table:style-name="ce5" office:value-type="string" calcext:value-type="string">
+            <text:p>CLE B545/2 Бикини жен.Сказ.Леc</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="ce13" office:value-type="float" office:value="150" calcext:value-type="float">
+            <text:p>150,00</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="ce16" table:number-columns-repeated="2"/>
+          <table:table-cell table:style-name="ce16" office:value-type="string" calcext:value-type="string">
+            <text:p>р42</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="ce16" office:value-type="string" calcext:value-type="string">
+            <text:p>р44</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="ce16" office:value-type="string" calcext:value-type="string">
+            <text:p>р46</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="ce16" office:value-type="string" calcext:value-type="string">
+            <text:p>р48</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="ce16" office:value-type="string" calcext:value-type="string">
+            <text:p>р50</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="ce16" office:value-type="string" calcext:value-type="string">
+            <text:p>р52</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="ce16" office:value-type="string" calcext:value-type="string">
+            <text:p>р54</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="ce16" office:value-type="string" calcext:value-type="string">
+            <text:p>р56</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="ce16" office:value-type="string" calcext:value-type="string">
+            <text:p>р58</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="ce16" office:value-type="string" calcext:value-type="string">
+            <text:p>р60</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="ce16" office:value-type="string" calcext:value-type="string">
+            <text:p>Всего</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="ce16" table:number-columns-repeated="2"/>
+          <table:table-cell table:number-columns-repeated="1007"/>
+        </table:table-row>
+        <table:table-row-group>
+          <table:table-row table:style-name="ro3">
+            <table:table-cell table:style-name="ce6" office:value-type="string" calcext:value-type="string">
+              <text:p>Цвет: св.розовый/св.малиновый</text:p>
+            </table:table-cell>
+            <table:table-cell table:number-columns-repeated="13"/>
+            <table:table-cell table:formula="of:=SUM([.E15:.N15])" office:value-type="float" office:value="0" calcext:value-type="float">
+              <text:p>0</text:p>
+            </table:table-cell>
+            <table:table-cell/>
+            <table:table-cell table:style-name="ce18" table:formula="of:=[.B14]*[.O15]" office:value-type="float" office:value="0" calcext:value-type="float">
+              <text:p>0,00</text:p>
+            </table:table-cell>
+            <table:table-cell table:number-columns-repeated="5"/>
+            <table:table-cell office:value-type="float" office:value="444633" calcext:value-type="float">
+              <text:p>444633</text:p>
+            </table:table-cell>
+            <table:table-cell office:value-type="float" office:value="5853" calcext:value-type="float">
+              <text:p>5853</text:p>
+            </table:table-cell>
+            <table:table-cell table:number-columns-repeated="1000"/>
+          </table:table-row>
+          <table:table-row table:style-name="ro4">
+            <table:table-cell table:style-name="ce7" office:value-type="string" calcext:value-type="string">
+              <text:p/>
+              <text:p/>
+              <text:p>Состав: 92% Хлопок 8% Эластан</text:p>
+            </table:table-cell>
+            <table:table-cell/>
+            <table:table-cell>
+              <draw:a xlink:type="simple" xlink:href="http://ftp.acewear.ru/public/Photo/44463358532.jpeg">
+                <draw:frame table:end-cell-address="'Белье женское'.F16" table:end-x="4.2mm" table:end-y="65.7mm" draw:z-index="4" draw:name="Picture 5" draw:style-name="gr1" draw:text-style-name="P1" svg:width="49.22mm" svg:height="65.44mm" svg:x="1.41mm" svg:y="0.26mm">
+                  <draw:image xlink:href="Pictures/10000000000003E800000578A3766095089511BC.jpg" xlink:type="simple" xlink:show="embed" xlink:actuate="onLoad">
+                    <text:p/>
+                  </draw:image>
+                  <svg:desc>temp82550</svg:desc>
+                </draw:frame>
+              </draw:a>
+            </table:table-cell>
+            <table:table-cell table:number-columns-repeated="4"/>
+            <table:table-cell>
+              <draw:a xlink:type="simple" xlink:href="http://ftp.acewear.ru/public/Photo/44463358531.jpeg">
+                <draw:frame table:end-cell-address="'Белье женское'.M16" table:end-x="4.48mm" table:end-y="65.7mm" draw:z-index="5" draw:name="Picture 6" draw:style-name="gr1" draw:text-style-name="P1" svg:width="49.19mm" svg:height="65.44mm" svg:x="8.38mm" svg:y="0.26mm">
+                  <draw:image xlink:href="Pictures/10000000000003E800000578707C45A296DC2733.jpg" xlink:type="simple" xlink:show="embed" xlink:actuate="onLoad">
+                    <text:p/>
+                  </draw:image>
+                  <svg:desc>temp82550</svg:desc>
+                </draw:frame>
+              </draw:a>
+            </table:table-cell>
+            <table:table-cell table:number-columns-repeated="1016"/>
+          </table:table-row>
+        </table:table-row-group>
+        <table:table-row table:style-name="ro3">
+          <table:table-cell office:value-type="string" calcext:value-type="string">
+            <text:p>Итого</text:p>
+          </table:table-cell>
+          <table:table-cell table:number-columns-repeated="13"/>
+          <table:table-cell table:formula="of:=SUM([.O15:.O16])" office:value-type="float" office:value="0" calcext:value-type="float">
+            <text:p>0</text:p>
+          </table:table-cell>
+          <table:table-cell/>
+          <table:table-cell table:style-name="ce18" table:formula="of:=SUM([.Q15:.Q16])" office:value-type="float" office:value="0" calcext:value-type="float">
+            <text:p>0,00</text:p>
+          </table:table-cell>
+          <table:table-cell table:number-columns-repeated="1007"/>
+        </table:table-row>
+        <table:table-row table:style-name="ro3">
+          <table:table-cell table:style-name="ce5" office:value-type="string" calcext:value-type="string">
+            <text:p>CLE BR545/2 Бразилиано жен.Ска</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="ce13" office:value-type="float" office:value="140" calcext:value-type="float">
+            <text:p>140,00</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="ce16" table:number-columns-repeated="2"/>
+          <table:table-cell table:style-name="ce16" office:value-type="string" calcext:value-type="string">
+            <text:p>р42</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="ce16" office:value-type="string" calcext:value-type="string">
+            <text:p>р44</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="ce16" office:value-type="string" calcext:value-type="string">
+            <text:p>р46</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="ce16" office:value-type="string" calcext:value-type="string">
+            <text:p>р48</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="ce16" office:value-type="string" calcext:value-type="string">
+            <text:p>р50</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="ce16" office:value-type="string" calcext:value-type="string">
+            <text:p>р52</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="ce16" office:value-type="string" calcext:value-type="string">
+            <text:p>р54</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="ce16" office:value-type="string" calcext:value-type="string">
+            <text:p>р56</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="ce16" office:value-type="string" calcext:value-type="string">
+            <text:p>р58</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="ce16" office:value-type="string" calcext:value-type="string">
+            <text:p>р60</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="ce16" office:value-type="string" calcext:value-type="string">
+            <text:p>Всего</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="ce16" table:number-columns-repeated="2"/>
+          <table:table-cell table:number-columns-repeated="1007"/>
+        </table:table-row>
+        <table:table-row-group>
+          <table:table-row table:style-name="ro3">
+            <table:table-cell table:style-name="ce6" office:value-type="string" calcext:value-type="string">
+              <text:p>Цвет: св.розовый/св.малиновый</text:p>
+            </table:table-cell>
+            <table:table-cell table:number-columns-repeated="13"/>
+            <table:table-cell table:formula="of:=SUM([.E19:.N19])" office:value-type="float" office:value="0" calcext:value-type="float">
+              <text:p>0</text:p>
+            </table:table-cell>
+            <table:table-cell/>
+            <table:table-cell table:style-name="ce18" table:formula="of:=[.B18]*[.O19]" office:value-type="float" office:value="0" calcext:value-type="float">
+              <text:p>0,00</text:p>
+            </table:table-cell>
+            <table:table-cell table:number-columns-repeated="5"/>
+            <table:table-cell office:value-type="float" office:value="444659" calcext:value-type="float">
+              <text:p>444659</text:p>
+            </table:table-cell>
+            <table:table-cell office:value-type="float" office:value="5853" calcext:value-type="float">
+              <text:p>5853</text:p>
+            </table:table-cell>
+            <table:table-cell table:number-columns-repeated="1000"/>
+          </table:table-row>
+          <table:table-row table:style-name="ro4">
+            <table:table-cell table:style-name="ce7" office:value-type="string" calcext:value-type="string">
+              <text:p/>
+              <text:p/>
+              <text:p>Состав: 92% Хлопок, 8% Эластан</text:p>
+            </table:table-cell>
+            <table:table-cell/>
+            <table:table-cell>
+              <draw:a xlink:type="simple" xlink:href="http://ftp.acewear.ru/public/Photo/44465958532.jpeg">
+                <draw:frame table:end-cell-address="'Белье женское'.F20" table:end-x="4.2mm" table:end-y="65.7mm" draw:z-index="6" draw:name="Picture 7" draw:style-name="gr1" draw:text-style-name="P1" svg:width="49.22mm" svg:height="65.44mm" svg:x="1.41mm" svg:y="0.26mm">
+                  <draw:image xlink:href="Pictures/10000000000003E800000578FAF7DADB8C2AF57A.jpg" xlink:type="simple" xlink:show="embed" xlink:actuate="onLoad">
+                    <text:p/>
+                  </draw:image>
+                  <svg:desc>temp82550</svg:desc>
+                </draw:frame>
+              </draw:a>
+            </table:table-cell>
+            <table:table-cell table:number-columns-repeated="4"/>
+            <table:table-cell>
+              <draw:a xlink:type="simple" xlink:href="http://ftp.acewear.ru/public/Photo/44465958531.jpeg">
+                <draw:frame table:end-cell-address="'Белье женское'.M20" table:end-x="4.48mm" table:end-y="65.7mm" draw:z-index="7" draw:name="Picture 8" draw:style-name="gr1" draw:text-style-name="P1" svg:width="49.19mm" svg:height="65.44mm" svg:x="8.38mm" svg:y="0.26mm">
+                  <draw:image xlink:href="Pictures/10000000000003E8000005788329F924498EFEF6.jpg" xlink:type="simple" xlink:show="embed" xlink:actuate="onLoad">
+                    <text:p/>
+                  </draw:image>
+                  <svg:desc>temp82550</svg:desc>
+                </draw:frame>
+              </draw:a>
+            </table:table-cell>
+            <table:table-cell table:number-columns-repeated="1016"/>
+          </table:table-row>
+        </table:table-row-group>
+        <table:table-row table:style-name="ro3">
+          <table:table-cell office:value-type="string" calcext:value-type="string">
+            <text:p>Итого</text:p>
+          </table:table-cell>
+          <table:table-cell table:number-columns-repeated="13"/>
+          <table:table-cell table:formula="of:=SUM([.O19:.O20])" office:value-type="float" office:value="0" calcext:value-type="float">
+            <text:p>0</text:p>
+          </table:table-cell>
+          <table:table-cell/>
+          <table:table-cell table:style-name="ce18" table:formula="of:=SUM([.Q19:.Q20])" office:value-type="float" office:value="0" calcext:value-type="float">
+            <text:p>0,00</text:p>
+          </table:table-cell>
+          <table:table-cell table:number-columns-repeated="1007"/>
+        </table:table-row>
+        <table:table-row table:style-name="ro3">
+          <table:table-cell table:style-name="ce5" office:value-type="string" calcext:value-type="string">
+            <text:p>CLE LDR16-545 Платье д.жен.Ска</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="ce13" office:value-type="float" office:value="750" calcext:value-type="float">
+            <text:p>750,00</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="ce16" table:number-columns-repeated="2"/>
+          <table:table-cell table:style-name="ce16" office:value-type="string" calcext:value-type="string">
+            <text:p>р42</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="ce16" office:value-type="string" calcext:value-type="string">
+            <text:p>р44</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="ce16" office:value-type="string" calcext:value-type="string">
+            <text:p>р46</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="ce16" office:value-type="string" calcext:value-type="string">
+            <text:p>р48</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="ce16" office:value-type="string" calcext:value-type="string">
+            <text:p>р50</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="ce16" office:value-type="string" calcext:value-type="string">
+            <text:p>р52</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="ce16" office:value-type="string" calcext:value-type="string">
+            <text:p>р54</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="ce16" office:value-type="string" calcext:value-type="string">
+            <text:p>р56</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="ce16" office:value-type="string" calcext:value-type="string">
+            <text:p>р58</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="ce16" office:value-type="string" calcext:value-type="string">
+            <text:p>р60</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="ce16" office:value-type="string" calcext:value-type="string">
+            <text:p>Всего</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="ce16" table:number-columns-repeated="2"/>
+          <table:table-cell table:number-columns-repeated="1007"/>
+        </table:table-row>
+        <table:table-row-group>
+          <table:table-row table:style-name="ro3">
+            <table:table-cell table:style-name="ce6" office:value-type="string" calcext:value-type="string">
+              <text:p>Цвет: меланж бежевый/т.серый</text:p>
+            </table:table-cell>
+            <table:table-cell table:number-columns-repeated="13"/>
+            <table:table-cell table:formula="of:=SUM([.E23:.N23])" office:value-type="float" office:value="0" calcext:value-type="float">
+              <text:p>0</text:p>
+            </table:table-cell>
+            <table:table-cell/>
+            <table:table-cell table:style-name="ce18" table:formula="of:=[.B22]*[.O23]" office:value-type="float" office:value="0" calcext:value-type="float">
+              <text:p>0,00</text:p>
+            </table:table-cell>
+            <table:table-cell table:number-columns-repeated="5"/>
+            <table:table-cell office:value-type="float" office:value="444869" calcext:value-type="float">
+              <text:p>444869</text:p>
+            </table:table-cell>
+            <table:table-cell office:value-type="float" office:value="5810" calcext:value-type="float">
+              <text:p>5810</text:p>
+            </table:table-cell>
+            <table:table-cell table:number-columns-repeated="1000"/>
+          </table:table-row>
+          <table:table-row table:style-name="ro4">
+            <table:table-cell table:style-name="ce7" office:value-type="string" calcext:value-type="string">
+              <text:p/>
+              <text:p/>
+              <text:p>Состав: 100% Хлопок</text:p>
+            </table:table-cell>
+            <table:table-cell/>
+            <table:table-cell>
+              <draw:a xlink:type="simple" xlink:href="http://ftp.acewear.ru/public/Photo/44486958102.jpeg">
+                <draw:frame table:end-cell-address="'Белье женское'.F24" table:end-x="4.2mm" table:end-y="65.7mm" draw:z-index="8" draw:name="Picture 9" draw:style-name="gr1" draw:text-style-name="P1" svg:width="49.22mm" svg:height="65.44mm" svg:x="1.41mm" svg:y="0.26mm">
+                  <draw:image xlink:href="Pictures/10000000000003E8000005789124CCECF26D9A0E.jpg" xlink:type="simple" xlink:show="embed" xlink:actuate="onLoad">
+                    <text:p/>
+                  </draw:image>
+                  <svg:desc>temp82550</svg:desc>
+                </draw:frame>
+              </draw:a>
+            </table:table-cell>
+            <table:table-cell table:number-columns-repeated="4"/>
+            <table:table-cell>
+              <draw:a xlink:type="simple" xlink:href="http://ftp.acewear.ru/public/Photo/44486958103.jpeg">
+                <draw:frame table:end-cell-address="'Белье женское'.M24" table:end-x="4.48mm" table:end-y="65.7mm" draw:z-index="9" draw:name="Picture 10" draw:style-name="gr1" draw:text-style-name="P1" svg:width="49.19mm" svg:height="65.44mm" svg:x="8.38mm" svg:y="0.26mm">
+                  <draw:image xlink:href="Pictures/10000000000003E800000578FA5B8449452FC6DF.jpg" xlink:type="simple" xlink:show="embed" xlink:actuate="onLoad">
+                    <text:p/>
+                  </draw:image>
+                  <svg:desc>temp82550</svg:desc>
+                </draw:frame>
+              </draw:a>
+            </table:table-cell>
+            <table:table-cell table:number-columns-repeated="6"/>
+            <table:table-cell>
+              <draw:a xlink:type="simple" xlink:href="http://ftp.acewear.ru/public/Photo/44486958101.jpeg">
+                <draw:frame table:end-cell-address="'Белье женское'.Q24" table:end-x="6.19mm" table:end-y="65.7mm" draw:z-index="10" draw:name="Picture 11" draw:style-name="gr1" draw:text-style-name="P1" svg:width="49.28mm" svg:height="65.44mm" svg:x="8.66mm" svg:y="0.26mm">
+                  <draw:image xlink:href="Pictures/10000000000003E800000578861C68E371642BC9.jpg" xlink:type="simple" xlink:show="embed" xlink:actuate="onLoad">
+                    <text:p/>
+                  </draw:image>
+                  <svg:desc>temp82550</svg:desc>
+                </draw:frame>
+              </draw:a>
+            </table:table-cell>
+            <table:table-cell table:number-columns-repeated="1009"/>
+          </table:table-row>
+        </table:table-row-group>
+        <table:table-row table:style-name="ro3">
+          <table:table-cell office:value-type="string" calcext:value-type="string">
+            <text:p>Итого</text:p>
+          </table:table-cell>
+          <table:table-cell table:number-columns-repeated="13"/>
+          <table:table-cell table:formula="of:=SUM([.O23:.O24])" office:value-type="float" office:value="0" calcext:value-type="float">
+            <text:p>0</text:p>
+          </table:table-cell>
+          <table:table-cell/>
+          <table:table-cell table:style-name="ce18" table:formula="of:=SUM([.Q23:.Q24])" office:value-type="float" office:value="0" calcext:value-type="float">
+            <text:p>0,00</text:p>
+          </table:table-cell>
+          <table:table-cell table:number-columns-repeated="1007"/>
+        </table:table-row>
+        <table:table-row table:style-name="ro3">
+          <table:table-cell table:style-name="ce5" office:value-type="string" calcext:value-type="string">
+            <text:p>CLE LF16-545-2 Джемпер жен.Ск</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="ce13" office:value-type="float" office:value="430" calcext:value-type="float">
+            <text:p>430,00</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="ce16" table:number-columns-repeated="2"/>
+          <table:table-cell table:style-name="ce16" office:value-type="string" calcext:value-type="string">
+            <text:p>р42</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="ce16" office:value-type="string" calcext:value-type="string">
+            <text:p>р44</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="ce16" office:value-type="string" calcext:value-type="string">
+            <text:p>р46</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="ce16" office:value-type="string" calcext:value-type="string">
+            <text:p>р48</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="ce16" office:value-type="string" calcext:value-type="string">
+            <text:p>р50</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="ce16" office:value-type="string" calcext:value-type="string">
+            <text:p>р52</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="ce16" office:value-type="string" calcext:value-type="string">
+            <text:p>р54</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="ce16" office:value-type="string" calcext:value-type="string">
+            <text:p>р56</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="ce16" office:value-type="string" calcext:value-type="string">
+            <text:p>р58</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="ce16" office:value-type="string" calcext:value-type="string">
+            <text:p>р60</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="ce16" office:value-type="string" calcext:value-type="string">
+            <text:p>Всего</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="ce16" table:number-columns-repeated="2"/>
+          <table:table-cell table:number-columns-repeated="1007"/>
+        </table:table-row>
+        <table:table-row-group>
+          <table:table-row table:style-name="ro3">
+            <table:table-cell table:style-name="ce6" office:value-type="string" calcext:value-type="string">
+              <text:p>Цвет: св.малиновый</text:p>
+            </table:table-cell>
+            <table:table-cell table:number-columns-repeated="3"/>
+            <table:table-cell table:number-columns-repeated="5" office:value-type="string" calcext:value-type="string">
+              <text:p>*</text:p>
+            </table:table-cell>
+            <table:table-cell table:number-columns-repeated="5"/>
+            <table:table-cell table:formula="of:=SUM([.E27:.N27])" office:value-type="float" office:value="0" calcext:value-type="float">
+              <text:p>0</text:p>
+            </table:table-cell>
+            <table:table-cell/>
+            <table:table-cell table:style-name="ce18" table:formula="of:=[.B26]*[.O27]" office:value-type="float" office:value="0" calcext:value-type="float">
+              <text:p>0,00</text:p>
+            </table:table-cell>
+            <table:table-cell table:number-columns-repeated="5"/>
+            <table:table-cell office:value-type="float" office:value="444900" calcext:value-type="float">
+              <text:p>444900</text:p>
+            </table:table-cell>
+            <table:table-cell office:value-type="float" office:value="12924" calcext:value-type="float">
+              <text:p>12924</text:p>
+            </table:table-cell>
+            <table:table-cell table:number-columns-repeated="1000"/>
+          </table:table-row>
+          <table:table-row table:style-name="ro4">
+            <table:table-cell table:style-name="ce7" office:value-type="string" calcext:value-type="string">
+              <text:p/>
+              <text:p/>
+              <text:p>Состав: 100% Хлопок</text:p>
+            </table:table-cell>
+            <table:table-cell/>
+            <table:table-cell>
+              <draw:a xlink:type="simple" xlink:href="http://ftp.acewear.ru/public/Photo/444900129241.jpeg">
+                <draw:frame table:end-cell-address="'Белье женское'.F28" table:end-x="4.2mm" table:end-y="65.7mm" draw:z-index="11" draw:name="Picture 12" draw:style-name="gr1" draw:text-style-name="P1" svg:width="49.22mm" svg:height="65.43mm" svg:x="1.41mm" svg:y="0.27mm">
+                  <draw:image xlink:href="Pictures/10000000000003E80000057822A0B862C4271527.jpg" xlink:type="simple" xlink:show="embed" xlink:actuate="onLoad">
+                    <text:p/>
+                  </draw:image>
+                  <svg:desc>temp82550</svg:desc>
+                </draw:frame>
+              </draw:a>
+            </table:table-cell>
+            <table:table-cell table:number-columns-repeated="4"/>
+            <table:table-cell>
+              <draw:a xlink:type="simple" xlink:href="http://ftp.acewear.ru/public/Photo/444900129242.jpeg">
+                <draw:frame table:end-cell-address="'Белье женское'.M28" table:end-x="4.48mm" table:end-y="65.7mm" draw:z-index="12" draw:name="Picture 13" draw:style-name="gr1" draw:text-style-name="P1" svg:width="49.19mm" svg:height="65.43mm" svg:x="8.38mm" svg:y="0.27mm">
+                  <draw:image xlink:href="Pictures/10000000000003E80000057876DB75A7CA36F86D.jpg" xlink:type="simple" xlink:show="embed" xlink:actuate="onLoad">
+                    <text:p/>
+                  </draw:image>
+                  <svg:desc>temp82550</svg:desc>
+                </draw:frame>
+              </draw:a>
+            </table:table-cell>
+            <table:table-cell table:number-columns-repeated="6"/>
+            <table:table-cell>
+              <draw:a xlink:type="simple" xlink:href="http://ftp.acewear.ru/public/Photo/444900129243.jpeg">
+                <draw:frame table:end-cell-address="'Белье женское'.Q28" table:end-x="6.19mm" table:end-y="65.7mm" draw:z-index="13" draw:name="Picture 14" draw:style-name="gr1" draw:text-style-name="P1" svg:width="49.28mm" svg:height="65.43mm" svg:x="8.66mm" svg:y="0.27mm">
+                  <draw:image xlink:href="Pictures/10000000000003E800000578B6174FBA96A29272.jpg" xlink:type="simple" xlink:show="embed" xlink:actuate="onLoad">
+                    <text:p/>
+                  </draw:image>
+                  <svg:desc>temp82550</svg:desc>
+                </draw:frame>
+              </draw:a>
+            </table:table-cell>
+            <table:table-cell table:number-columns-repeated="1009"/>
+          </table:table-row>
+        </table:table-row-group>
+        <table:table-row table:style-name="ro3">
+          <table:table-cell office:value-type="string" calcext:value-type="string">
+            <text:p>Итого</text:p>
+          </table:table-cell>
+          <table:table-cell table:number-columns-repeated="13"/>
+          <table:table-cell table:formula="of:=SUM([.O27:.O28])" office:value-type="float" office:value="0" calcext:value-type="float">
+            <text:p>0</text:p>
+          </table:table-cell>
+          <table:table-cell/>
+          <table:table-cell table:style-name="ce18" table:formula="of:=SUM([.Q27:.Q28])" office:value-type="float" office:value="0" calcext:value-type="float">
+            <text:p>0,00</text:p>
+          </table:table-cell>
+          <table:table-cell table:number-columns-repeated="1007"/>
+        </table:table-row>
+        <table:table-row table:style-name="ro3">
+          <table:table-cell table:style-name="ce5" office:value-type="string" calcext:value-type="string">
+            <text:p>CLE LL16-545 Брюки жен.Сказ л</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="ce13" office:value-type="float" office:value="450" calcext:value-type="float">
+            <text:p>450,00</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="ce16" table:number-columns-repeated="2"/>
+          <table:table-cell table:style-name="ce16" office:value-type="string" calcext:value-type="string">
+            <text:p>р42</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="ce16" office:value-type="string" calcext:value-type="string">
+            <text:p>р44</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="ce16" office:value-type="string" calcext:value-type="string">
+            <text:p>р46</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="ce16" office:value-type="string" calcext:value-type="string">
+            <text:p>р48</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="ce16" office:value-type="string" calcext:value-type="string">
+            <text:p>р50</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="ce16" office:value-type="string" calcext:value-type="string">
+            <text:p>р52</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="ce16" office:value-type="string" calcext:value-type="string">
+            <text:p>р54</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="ce16" office:value-type="string" calcext:value-type="string">
+            <text:p>р56</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="ce16" office:value-type="string" calcext:value-type="string">
+            <text:p>р58</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="ce16" office:value-type="string" calcext:value-type="string">
+            <text:p>р60</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="ce16" office:value-type="string" calcext:value-type="string">
+            <text:p>Всего</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="ce16" table:number-columns-repeated="2"/>
+          <table:table-cell table:number-columns-repeated="1007"/>
+        </table:table-row>
+        <table:table-row-group>
+          <table:table-row table:style-name="ro3">
+            <table:table-cell table:style-name="ce6" office:value-type="string" calcext:value-type="string">
+              <text:p>Цвет: меланж бежевый/т.серый</text:p>
+            </table:table-cell>
+            <table:table-cell table:number-columns-repeated="13"/>
+            <table:table-cell table:formula="of:=SUM([.E31:.N31])" office:value-type="float" office:value="0" calcext:value-type="float">
+              <text:p>0</text:p>
+            </table:table-cell>
+            <table:table-cell/>
+            <table:table-cell table:style-name="ce18" table:formula="of:=[.B30]*[.O31]" office:value-type="float" office:value="0" calcext:value-type="float">
+              <text:p>0,00</text:p>
+            </table:table-cell>
+            <table:table-cell table:number-columns-repeated="5"/>
+            <table:table-cell office:value-type="float" office:value="444862" calcext:value-type="float">
+              <text:p>444862</text:p>
+            </table:table-cell>
+            <table:table-cell office:value-type="float" office:value="5810" calcext:value-type="float">
+              <text:p>5810</text:p>
+            </table:table-cell>
+            <table:table-cell table:number-columns-repeated="1000"/>
+          </table:table-row>
+          <table:table-row table:style-name="ro4">
+            <table:table-cell table:style-name="ce7" office:value-type="string" calcext:value-type="string">
+              <text:p/>
+              <text:p/>
+              <text:p>Состав: 92% Хлопок, 8% Эластан</text:p>
+            </table:table-cell>
+            <table:table-cell/>
+            <table:table-cell>
+              <draw:a xlink:type="simple" xlink:href="http://ftp.acewear.ru/public/Photo/44486258102.jpeg">
+                <draw:frame table:end-cell-address="'Белье женское'.F32" table:end-x="4.2mm" table:end-y="65.7mm" draw:z-index="14" draw:name="Picture 15" draw:style-name="gr1" draw:text-style-name="P1" svg:width="49.22mm" svg:height="65.43mm" svg:x="1.41mm" svg:y="0.27mm">
+                  <draw:image xlink:href="Pictures/10000000000003E800000578796143F9DEED813D.jpg" xlink:type="simple" xlink:show="embed" xlink:actuate="onLoad">
+                    <text:p/>
+                  </draw:image>
+                  <svg:desc>temp82550</svg:desc>
+                </draw:frame>
+              </draw:a>
+            </table:table-cell>
+            <table:table-cell table:number-columns-repeated="4"/>
+            <table:table-cell>
+              <draw:a xlink:type="simple" xlink:href="http://ftp.acewear.ru/public/Photo/44486258101.jpeg">
+                <draw:frame table:end-cell-address="'Белье женское'.M32" table:end-x="4.48mm" table:end-y="65.7mm" draw:z-index="15" draw:name="Picture 16" draw:style-name="gr1" draw:text-style-name="P1" svg:width="49.19mm" svg:height="65.43mm" svg:x="8.38mm" svg:y="0.27mm">
+                  <draw:image xlink:href="Pictures/10000000000003E80000057822A0B862C4271527.jpg" xlink:type="simple" xlink:show="embed" xlink:actuate="onLoad">
+                    <text:p/>
+                  </draw:image>
+                  <svg:desc>temp82550</svg:desc>
+                </draw:frame>
+              </draw:a>
+            </table:table-cell>
+            <table:table-cell table:number-columns-repeated="1016"/>
+          </table:table-row>
+        </table:table-row-group>
+        <table:table-row table:style-name="ro3">
+          <table:table-cell office:value-type="string" calcext:value-type="string">
+            <text:p>Итого</text:p>
+          </table:table-cell>
+          <table:table-cell table:number-columns-repeated="13"/>
+          <table:table-cell table:formula="of:=SUM([.O31:.O32])" office:value-type="float" office:value="0" calcext:value-type="float">
+            <text:p>0</text:p>
+          </table:table-cell>
+          <table:table-cell/>
+          <table:table-cell table:style-name="ce18" table:formula="of:=SUM([.Q31:.Q32])" office:value-type="float" office:value="0" calcext:value-type="float">
+            <text:p>0,00</text:p>
+          </table:table-cell>
+          <table:table-cell table:number-columns-repeated="1007"/>
+        </table:table-row>
+        <table:table-row table:style-name="ro3">
+          <table:table-cell table:style-name="ce5" office:value-type="string" calcext:value-type="string">
+            <text:p>CLE LP16-545 Пижама жен.Сказ л</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="ce13" office:value-type="float" office:value="750" calcext:value-type="float">
+            <text:p>750,00</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="ce16" table:number-columns-repeated="2"/>
+          <table:table-cell table:style-name="ce16" office:value-type="string" calcext:value-type="string">
+            <text:p>р42</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="ce16" office:value-type="string" calcext:value-type="string">
+            <text:p>р44</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="ce16" office:value-type="string" calcext:value-type="string">
+            <text:p>р46</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="ce16" office:value-type="string" calcext:value-type="string">
+            <text:p>р48</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="ce16" office:value-type="string" calcext:value-type="string">
+            <text:p>р50</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="ce16" office:value-type="string" calcext:value-type="string">
+            <text:p>р52</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="ce16" office:value-type="string" calcext:value-type="string">
+            <text:p>р54</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="ce16" office:value-type="string" calcext:value-type="string">
+            <text:p>р56</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="ce16" office:value-type="string" calcext:value-type="string">
+            <text:p>р58</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="ce16" office:value-type="string" calcext:value-type="string">
+            <text:p>р60</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="ce16" office:value-type="string" calcext:value-type="string">
+            <text:p>Всего</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="ce16" table:number-columns-repeated="2"/>
+          <table:table-cell table:number-columns-repeated="1007"/>
+        </table:table-row>
+        <table:table-row-group>
+          <table:table-row table:style-name="ro3">
+            <table:table-cell table:style-name="ce6" office:value-type="string" calcext:value-type="string">
+              <text:p>Цвет: молочный/меланж бежевый</text:p>
+            </table:table-cell>
+            <table:table-cell table:number-columns-repeated="13"/>
+            <table:table-cell table:formula="of:=SUM([.E35:.N35])" office:value-type="float" office:value="0" calcext:value-type="float">
+              <text:p>0</text:p>
+            </table:table-cell>
+            <table:table-cell/>
+            <table:table-cell table:style-name="ce18" table:formula="of:=[.B34]*[.O35]" office:value-type="float" office:value="0" calcext:value-type="float">
+              <text:p>0,00</text:p>
+            </table:table-cell>
+            <table:table-cell table:number-columns-repeated="5"/>
+            <table:table-cell office:value-type="float" office:value="444592" calcext:value-type="float">
+              <text:p>444592</text:p>
+            </table:table-cell>
+            <table:table-cell office:value-type="float" office:value="5846" calcext:value-type="float">
+              <text:p>5846</text:p>
+            </table:table-cell>
+            <table:table-cell table:number-columns-repeated="1000"/>
+          </table:table-row>
+          <table:table-row table:style-name="ro4">
+            <table:table-cell table:style-name="ce7" office:value-type="string" calcext:value-type="string">
+              <text:p/>
+              <text:p/>
+              <text:p>Состав: 100% Хлопок</text:p>
+            </table:table-cell>
+            <table:table-cell/>
+            <table:table-cell>
+              <draw:a xlink:type="simple" xlink:href="http://ftp.acewear.ru/public/Photo/44459258462.jpeg">
+                <draw:frame table:end-cell-address="'Белье женское'.F36" table:end-x="4.2mm" table:end-y="65.7mm" draw:z-index="16" draw:name="Picture 17" draw:style-name="gr1" draw:text-style-name="P1" svg:width="49.22mm" svg:height="65.44mm" svg:x="1.41mm" svg:y="0.26mm">
+                  <draw:image xlink:href="Pictures/10000000000003E80000057825C81FCEB1BD7DF7.jpg" xlink:type="simple" xlink:show="embed" xlink:actuate="onLoad">
+                    <text:p/>
+                  </draw:image>
+                  <svg:desc>temp82550</svg:desc>
+                </draw:frame>
+              </draw:a>
+            </table:table-cell>
+            <table:table-cell table:number-columns-repeated="4"/>
+            <table:table-cell>
+              <draw:a xlink:type="simple" xlink:href="http://ftp.acewear.ru/public/Photo/44459258461.jpeg">
+                <draw:frame table:end-cell-address="'Белье женское'.M36" table:end-x="4.48mm" table:end-y="65.7mm" draw:z-index="17" draw:name="Picture 18" draw:style-name="gr1" draw:text-style-name="P1" svg:width="49.19mm" svg:height="65.44mm" svg:x="8.38mm" svg:y="0.26mm">
+                  <draw:image xlink:href="Pictures/10000000000003E800000578B940450014BF4CB4.jpg" xlink:type="simple" xlink:show="embed" xlink:actuate="onLoad">
+                    <text:p/>
+                  </draw:image>
+                  <svg:desc>temp82550</svg:desc>
+                </draw:frame>
+              </draw:a>
+            </table:table-cell>
+            <table:table-cell/>
+            <table:table-cell office:value-type="float" office:value="10" calcext:value-type="float">
+              <text:p>10</text:p>
+            </table:table-cell>
+            <table:table-cell table:number-columns-repeated="4"/>
+            <table:table-cell>
+              <draw:a xlink:type="simple" xlink:href="http://ftp.acewear.ru/public/Photo/44459258463.jpeg">
+                <draw:frame table:end-cell-address="'Белье женское'.Q36" table:end-x="6.19mm" table:end-y="65.7mm" draw:z-index="18" draw:name="Picture 19" draw:style-name="gr1" draw:text-style-name="P1" svg:width="49.28mm" svg:height="65.44mm" svg:x="8.66mm" svg:y="0.26mm">
+                  <draw:image xlink:href="Pictures/10000000000003E800000578F18BCB8135722884.jpg" xlink:type="simple" xlink:show="embed" xlink:actuate="onLoad">
+                    <text:p/>
+                  </draw:image>
+                  <svg:desc>temp82550</svg:desc>
+                </draw:frame>
+              </draw:a>
+            </table:table-cell>
+            <table:table-cell table:number-columns-repeated="1009"/>
+          </table:table-row>
+        </table:table-row-group>
+        <table:table-row table:style-name="ro3">
+          <table:table-cell office:value-type="string" calcext:value-type="string">
+            <text:p>Итого</text:p>
+          </table:table-cell>
+          <table:table-cell table:number-columns-repeated="13"/>
+          <table:table-cell table:formula="of:=SUM([.O35:.O36])" office:value-type="float" office:value="0" calcext:value-type="float">
+            <text:p>0</text:p>
+          </table:table-cell>
+          <table:table-cell/>
+          <table:table-cell table:style-name="ce18" table:formula="of:=SUM([.Q35:.Q36])" office:value-type="float" office:value="0" calcext:value-type="float">
+            <text:p>0,00</text:p>
+          </table:table-cell>
+          <table:table-cell table:number-columns-repeated="1007"/>
+        </table:table-row>
+        <table:table-row table:style-name="ro3">
+          <table:table-cell table:style-name="ce5" office:value-type="string" calcext:value-type="string">
+            <text:p>CLE LP16-545/1 Пижама жен.Сказ</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="ce13" office:value-type="float" office:value="1200" calcext:value-type="float">
+            <text:p>1 200,00</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="ce16" table:number-columns-repeated="2"/>
+          <table:table-cell table:style-name="ce16" office:value-type="string" calcext:value-type="string">
+            <text:p>р42</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="ce16" office:value-type="string" calcext:value-type="string">
+            <text:p>р44</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="ce16" office:value-type="string" calcext:value-type="string">
+            <text:p>р46</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="ce16" office:value-type="string" calcext:value-type="string">
+            <text:p>р48</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="ce16" office:value-type="string" calcext:value-type="string">
+            <text:p>р50</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="ce16" office:value-type="string" calcext:value-type="string">
+            <text:p>р52</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="ce16" office:value-type="string" calcext:value-type="string">
+            <text:p>р54</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="ce16" office:value-type="string" calcext:value-type="string">
+            <text:p>р56</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="ce16" office:value-type="string" calcext:value-type="string">
+            <text:p>р58</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="ce16" office:value-type="string" calcext:value-type="string">
+            <text:p>р60</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="ce16" office:value-type="string" calcext:value-type="string">
+            <text:p>Всего</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="ce16" table:number-columns-repeated="2"/>
+          <table:table-cell table:number-columns-repeated="1007"/>
+        </table:table-row>
+        <table:table-row-group>
+          <table:table-row table:style-name="ro3">
+            <table:table-cell table:style-name="ce6" office:value-type="string" calcext:value-type="string">
+              <text:p>Цвет: меланж бежевый/св.розовый</text:p>
+            </table:table-cell>
+            <table:table-cell table:number-columns-repeated="13"/>
+            <table:table-cell table:formula="of:=SUM([.E39:.N39])" office:value-type="float" office:value="0" calcext:value-type="float">
+              <text:p>0</text:p>
+            </table:table-cell>
+            <table:table-cell/>
+            <table:table-cell table:style-name="ce18" table:formula="of:=[.B38]*[.O39]" office:value-type="float" office:value="0" calcext:value-type="float">
+              <text:p>0,00</text:p>
+            </table:table-cell>
+            <table:table-cell table:number-columns-repeated="5"/>
+            <table:table-cell office:value-type="float" office:value="444863" calcext:value-type="float">
+              <text:p>444863</text:p>
+            </table:table-cell>
+            <table:table-cell office:value-type="float" office:value="5881" calcext:value-type="float">
+              <text:p>5881</text:p>
+            </table:table-cell>
+            <table:table-cell table:number-columns-repeated="1000"/>
+          </table:table-row>
+          <table:table-row table:style-name="ro4">
+            <table:table-cell table:style-name="ce7" office:value-type="string" calcext:value-type="string">
+              <text:p/>
+              <text:p/>
+              <text:p>Состав: 92% Хлопок, 8% Эластан</text:p>
+            </table:table-cell>
+            <table:table-cell>
+              <draw:a xlink:type="simple" xlink:href="http://ftp.acewear.ru/public/Photo/44486358812.jpeg">
+                <draw:frame table:end-cell-address="'Белье женское'.F40" table:end-x="0.29mm" table:end-y="65.7mm" draw:z-index="19" draw:name="Picture 20" draw:style-name="gr1" draw:text-style-name="P1" svg:width="49.23mm" svg:height="65.44mm" svg:x="19.31mm" svg:y="0.26mm">
+                  <draw:image xlink:href="Pictures/10000000000003E800000578415240BC36C594D3.jpg" xlink:type="simple" xlink:show="embed" xlink:actuate="onLoad">
+                    <text:p/>
+                  </draw:image>
+                  <svg:desc>temp82550</svg:desc>
+                </draw:frame>
+              </draw:a>
+            </table:table-cell>
+            <table:table-cell table:number-columns-repeated="5"/>
+            <table:table-cell>
+              <draw:a xlink:type="simple" xlink:href="http://ftp.acewear.ru/public/Photo/44486358813.jpeg">
+                <draw:frame table:end-cell-address="'Белье женское'.M40" table:end-x="0.57mm" table:end-y="65.7mm" draw:z-index="20" draw:name="Picture 21" draw:style-name="gr1" draw:text-style-name="P1" svg:width="49.19mm" svg:height="65.44mm" svg:x="4.47mm" svg:y="0.26mm">
+                  <draw:image xlink:href="Pictures/10000000000003E800000578153BC97198EB604E.jpg" xlink:type="simple" xlink:show="embed" xlink:actuate="onLoad">
+                    <text:p/>
+                  </draw:image>
+                  <svg:desc>temp82550</svg:desc>
+                </draw:frame>
+              </draw:a>
+            </table:table-cell>
+            <table:table-cell table:number-columns-repeated="6"/>
+            <table:table-cell>
+              <draw:a xlink:type="simple" xlink:href="http://ftp.acewear.ru/public/Photo/44486358811.jpeg">
+                <draw:frame table:end-cell-address="'Белье женское'.Q40" table:end-x="2.29mm" table:end-y="65.7mm" draw:z-index="21" draw:name="Picture 22" draw:style-name="gr1" draw:text-style-name="P1" svg:width="49.28mm" svg:height="65.44mm" svg:x="4.76mm" svg:y="0.26mm">
+                  <draw:image xlink:href="Pictures/10000000000003E8000005784D4665D1D4458A6E.jpg" xlink:type="simple" xlink:show="embed" xlink:actuate="onLoad">
+                    <text:p/>
+                  </draw:image>
+                  <svg:desc>temp82550</svg:desc>
+                </draw:frame>
+              </draw:a>
+            </table:table-cell>
+            <table:table-cell table:number-columns-repeated="1009"/>
+          </table:table-row>
+        </table:table-row-group>
+        <table:table-row table:style-name="ro3">
+          <table:table-cell office:value-type="string" calcext:value-type="string">
+            <text:p>Итого</text:p>
+          </table:table-cell>
+          <table:table-cell table:number-columns-repeated="13"/>
+          <table:table-cell table:formula="of:=SUM([.O39:.O40])" office:value-type="float" office:value="0" calcext:value-type="float">
+            <text:p>0</text:p>
+          </table:table-cell>
+          <table:table-cell/>
+          <table:table-cell table:style-name="ce18" table:formula="of:=SUM([.Q39:.Q40])" office:value-type="float" office:value="0" calcext:value-type="float">
+            <text:p>0,00</text:p>
+          </table:table-cell>
+          <table:table-cell table:number-columns-repeated="1007"/>
+        </table:table-row>
+        <table:table-row table:style-name="ro3">
+          <table:table-cell table:style-name="ce5" office:value-type="string" calcext:value-type="string">
+            <text:p>CLE LP16-545/2 Пижама жен.Сказ</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="ce13" office:value-type="float" office:value="1100" calcext:value-type="float">
+            <text:p>1 100,00</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="ce16" table:number-columns-repeated="2"/>
+          <table:table-cell table:style-name="ce16" office:value-type="string" calcext:value-type="string">
+            <text:p>р42</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="ce16" office:value-type="string" calcext:value-type="string">
+            <text:p>р44</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="ce16" office:value-type="string" calcext:value-type="string">
+            <text:p>р46</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="ce16" office:value-type="string" calcext:value-type="string">
+            <text:p>р48</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="ce16" office:value-type="string" calcext:value-type="string">
+            <text:p>р50</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="ce16" office:value-type="string" calcext:value-type="string">
+            <text:p>р52</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="ce16" office:value-type="string" calcext:value-type="string">
+            <text:p>р54</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="ce16" office:value-type="string" calcext:value-type="string">
+            <text:p>р56</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="ce16" office:value-type="string" calcext:value-type="string">
+            <text:p>р58</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="ce16" office:value-type="string" calcext:value-type="string">
+            <text:p>р60</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="ce16" office:value-type="string" calcext:value-type="string">
+            <text:p>Всего</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="ce16" table:number-columns-repeated="2"/>
+          <table:table-cell table:number-columns-repeated="1007"/>
+        </table:table-row>
+        <table:table-row-group>
+          <table:table-row table:style-name="ro3">
+            <table:table-cell table:style-name="ce6" office:value-type="string" calcext:value-type="string">
+              <text:p>Цвет: св.малиновый/св.розовый</text:p>
+            </table:table-cell>
+            <table:table-cell table:number-columns-repeated="13"/>
+            <table:table-cell table:formula="of:=SUM([.E43:.N43])" office:value-type="float" office:value="0" calcext:value-type="float">
+              <text:p>0</text:p>
+            </table:table-cell>
+            <table:table-cell/>
+            <table:table-cell table:style-name="ce18" table:formula="of:=[.B42]*[.O43]" office:value-type="float" office:value="0" calcext:value-type="float">
+              <text:p>0,00</text:p>
+            </table:table-cell>
+            <table:table-cell table:number-columns-repeated="5"/>
+            <table:table-cell office:value-type="float" office:value="444864" calcext:value-type="float">
+              <text:p>444864</text:p>
+            </table:table-cell>
+            <table:table-cell office:value-type="float" office:value="5863" calcext:value-type="float">
+              <text:p>5863</text:p>
+            </table:table-cell>
+            <table:table-cell table:number-columns-repeated="1000"/>
+          </table:table-row>
+          <table:table-row table:style-name="ro4">
+            <table:table-cell table:style-name="ce7" office:value-type="string" calcext:value-type="string">
+              <text:p/>
+              <text:p/>
+              <text:p>Состав: 100% Хлопок</text:p>
+            </table:table-cell>
+            <table:table-cell>
+              <draw:a xlink:type="simple" xlink:href="http://ftp.acewear.ru/public/Photo/44486458632.jpeg">
+                <draw:frame table:end-cell-address="'Белье женское'.F44" table:end-x="0.29mm" table:end-y="65.7mm" draw:z-index="22" draw:name="Picture 23" draw:style-name="gr1" draw:text-style-name="P1" svg:width="49.23mm" svg:height="65.44mm" svg:x="19.31mm" svg:y="0.26mm">
+                  <draw:image xlink:href="Pictures/10000000000003E800000578562422E50F2A9B5C.jpg" xlink:type="simple" xlink:show="embed" xlink:actuate="onLoad">
+                    <text:p/>
+                  </draw:image>
+                  <svg:desc>temp82550</svg:desc>
+                </draw:frame>
+              </draw:a>
+            </table:table-cell>
+            <table:table-cell table:number-columns-repeated="5"/>
+            <table:table-cell>
+              <draw:a xlink:type="simple" xlink:href="http://ftp.acewear.ru/public/Photo/44486458633.jpeg">
+                <draw:frame table:end-cell-address="'Белье женское'.M44" table:end-x="0.57mm" table:end-y="65.7mm" draw:z-index="23" draw:name="Picture 24" draw:style-name="gr1" draw:text-style-name="P1" svg:width="49.19mm" svg:height="65.44mm" svg:x="4.47mm" svg:y="0.26mm">
+                  <draw:image xlink:href="Pictures/10000000000003E8000005785C22D836331E61F9.jpg" xlink:type="simple" xlink:show="embed" xlink:actuate="onLoad">
+                    <text:p/>
+                  </draw:image>
+                  <svg:desc>temp82550</svg:desc>
+                </draw:frame>
+              </draw:a>
+            </table:table-cell>
+            <table:table-cell table:number-columns-repeated="6"/>
+            <table:table-cell>
+              <draw:a xlink:type="simple" xlink:href="http://ftp.acewear.ru/public/Photo/44486458631.jpeg">
+                <draw:frame table:end-cell-address="'Белье женское'.Q44" table:end-x="2.29mm" table:end-y="65.7mm" draw:z-index="24" draw:name="Picture 25" draw:style-name="gr1" draw:text-style-name="P1" svg:width="49.28mm" svg:height="65.44mm" svg:x="4.76mm" svg:y="0.26mm">
+                  <draw:image xlink:href="Pictures/10000000000003E800000578A98D245EB383245D.jpg" xlink:type="simple" xlink:show="embed" xlink:actuate="onLoad">
+                    <text:p/>
+                  </draw:image>
+                  <svg:desc>temp82550</svg:desc>
+                </draw:frame>
+              </draw:a>
+            </table:table-cell>
+            <table:table-cell table:number-columns-repeated="1009"/>
+          </table:table-row>
+        </table:table-row-group>
+        <table:table-row table:style-name="ro3">
+          <table:table-cell office:value-type="string" calcext:value-type="string">
+            <text:p>Итого</text:p>
+          </table:table-cell>
+          <table:table-cell table:number-columns-repeated="13"/>
+          <table:table-cell table:formula="of:=SUM([.O43:.O44])" office:value-type="float" office:value="0" calcext:value-type="float">
+            <text:p>0</text:p>
+          </table:table-cell>
+          <table:table-cell/>
+          <table:table-cell table:style-name="ce18" table:formula="of:=SUM([.Q43:.Q44])" office:value-type="float" office:value="0" calcext:value-type="float">
+            <text:p>0,00</text:p>
+          </table:table-cell>
+          <table:table-cell table:number-columns-repeated="1007"/>
+        </table:table-row>
+        <table:table-row table:style-name="ro3">
+          <table:table-cell table:style-name="ce5" office:value-type="string" calcext:value-type="string">
+            <text:p>CLE LS16-545 Сорочка жен.Сказ</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="ce13" office:value-type="float" office:value="550" calcext:value-type="float">
+            <text:p>550,00</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="ce16" table:number-columns-repeated="2"/>
+          <table:table-cell table:style-name="ce16" office:value-type="string" calcext:value-type="string">
+            <text:p>р42</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="ce16" office:value-type="string" calcext:value-type="string">
+            <text:p>р44</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="ce16" office:value-type="string" calcext:value-type="string">
+            <text:p>р46</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="ce16" office:value-type="string" calcext:value-type="string">
+            <text:p>р48</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="ce16" office:value-type="string" calcext:value-type="string">
+            <text:p>р50</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="ce16" office:value-type="string" calcext:value-type="string">
+            <text:p>р52</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="ce16" office:value-type="string" calcext:value-type="string">
+            <text:p>р54</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="ce16" office:value-type="string" calcext:value-type="string">
+            <text:p>р56</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="ce16" office:value-type="string" calcext:value-type="string">
+            <text:p>р58</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="ce16" office:value-type="string" calcext:value-type="string">
+            <text:p>р60</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="ce16" office:value-type="string" calcext:value-type="string">
+            <text:p>Всего</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="ce16" table:number-columns-repeated="2"/>
+          <table:table-cell table:number-columns-repeated="1007"/>
+        </table:table-row>
+        <table:table-row-group>
+          <table:table-row table:style-name="ro3">
+            <table:table-cell table:style-name="ce6" office:value-type="string" calcext:value-type="string">
+              <text:p>Цвет: св.розовый/св.малиновый</text:p>
+            </table:table-cell>
+            <table:table-cell table:number-columns-repeated="13"/>
+            <table:table-cell table:formula="of:=SUM([.E47:.N47])" office:value-type="float" office:value="0" calcext:value-type="float">
+              <text:p>0</text:p>
+            </table:table-cell>
+            <table:table-cell/>
+            <table:table-cell table:style-name="ce18" table:formula="of:=[.B46]*[.O47]" office:value-type="float" office:value="0" calcext:value-type="float">
+              <text:p>0,00</text:p>
+            </table:table-cell>
+            <table:table-cell table:number-columns-repeated="5"/>
+            <table:table-cell office:value-type="float" office:value="444872" calcext:value-type="float">
+              <text:p>444872</text:p>
+            </table:table-cell>
+            <table:table-cell office:value-type="float" office:value="5853" calcext:value-type="float">
+              <text:p>5853</text:p>
+            </table:table-cell>
+            <table:table-cell table:number-columns-repeated="1000"/>
+          </table:table-row>
+          <table:table-row table:style-name="ro4">
+            <table:table-cell table:style-name="ce7" office:value-type="string" calcext:value-type="string">
+              <text:p/>
+              <text:p/>
+              <text:p>Состав: 100% Хлопок</text:p>
+            </table:table-cell>
+            <table:table-cell>
+              <draw:a xlink:type="simple" xlink:href="http://ftp.acewear.ru/public/Photo/44487258532.jpeg">
+                <draw:frame table:end-cell-address="'Белье женское'.F48" table:end-x="0.29mm" table:end-y="65.7mm" draw:z-index="25" draw:name="Picture 26" draw:style-name="gr1" draw:text-style-name="P1" svg:width="49.23mm" svg:height="65.44mm" svg:x="19.31mm" svg:y="0.26mm">
+                  <draw:image xlink:href="Pictures/10000000000003E800000578EF2842A7A3C76DB8.jpg" xlink:type="simple" xlink:show="embed" xlink:actuate="onLoad">
+                    <text:p/>
+                  </draw:image>
+                  <svg:desc>temp82550</svg:desc>
+                </draw:frame>
+              </draw:a>
+            </table:table-cell>
+            <table:table-cell table:number-columns-repeated="5"/>
+            <table:table-cell>
+              <draw:a xlink:type="simple" xlink:href="http://ftp.acewear.ru/public/Photo/44487258533.jpeg">
+                <draw:frame table:end-cell-address="'Белье женское'.M48" table:end-x="0.57mm" table:end-y="65.7mm" draw:z-index="26" draw:name="Picture 27" draw:style-name="gr1" draw:text-style-name="P1" svg:width="49.19mm" svg:height="65.44mm" svg:x="4.47mm" svg:y="0.26mm">
+                  <draw:image xlink:href="Pictures/10000000000003E80000057806AAD9115531116D.jpg" xlink:type="simple" xlink:show="embed" xlink:actuate="onLoad">
+                    <text:p/>
+                  </draw:image>
+                  <svg:desc>temp82550</svg:desc>
+                </draw:frame>
+              </draw:a>
+            </table:table-cell>
+            <table:table-cell table:number-columns-repeated="6"/>
+            <table:table-cell>
+              <draw:a xlink:type="simple" xlink:href="http://ftp.acewear.ru/public/Photo/44487258531.jpeg">
+                <draw:frame table:end-cell-address="'Белье женское'.Q48" table:end-x="2.29mm" table:end-y="65.7mm" draw:z-index="27" draw:name="Picture 28" draw:style-name="gr1" draw:text-style-name="P1" svg:width="49.28mm" svg:height="65.44mm" svg:x="4.76mm" svg:y="0.26mm">
+                  <draw:image xlink:href="Pictures/10000000000003E800000578E67762FDE4CAF452.jpg" xlink:type="simple" xlink:show="embed" xlink:actuate="onLoad">
+                    <text:p/>
+                  </draw:image>
+                  <svg:desc>temp82550</svg:desc>
+                </draw:frame>
+              </draw:a>
+            </table:table-cell>
+            <table:table-cell table:number-columns-repeated="1009"/>
+          </table:table-row>
+        </table:table-row-group>
+        <table:table-row table:style-name="ro3">
+          <table:table-cell office:value-type="string" calcext:value-type="string">
+            <text:p>Итого</text:p>
+          </table:table-cell>
+          <table:table-cell table:number-columns-repeated="13"/>
+          <table:table-cell table:formula="of:=SUM([.O47:.O48])" office:value-type="float" office:value="0" calcext:value-type="float">
+            <text:p>0</text:p>
+          </table:table-cell>
+          <table:table-cell/>
+          <table:table-cell table:style-name="ce18" table:formula="of:=SUM([.Q47:.Q48])" office:value-type="float" office:value="0" calcext:value-type="float">
+            <text:p>0,00</text:p>
+          </table:table-cell>
+          <table:table-cell table:number-columns-repeated="1007"/>
+        </table:table-row>
+        <table:table-row table:style-name="ro3">
+          <table:table-cell table:style-name="ce5" office:value-type="string" calcext:value-type="string">
+            <text:p>CLE LX16-545 Халат жен.Сказ Л</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="ce13" office:value-type="float" office:value="1180" calcext:value-type="float">
+            <text:p>1 180,00</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="ce16" table:number-columns-repeated="2"/>
+          <table:table-cell table:style-name="ce16" office:value-type="string" calcext:value-type="string">
+            <text:p>р42</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="ce16" office:value-type="string" calcext:value-type="string">
+            <text:p>р44</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="ce16" office:value-type="string" calcext:value-type="string">
+            <text:p>р46</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="ce16" office:value-type="string" calcext:value-type="string">
+            <text:p>р48</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="ce16" office:value-type="string" calcext:value-type="string">
+            <text:p>р50</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="ce16" office:value-type="string" calcext:value-type="string">
+            <text:p>р52</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="ce16" office:value-type="string" calcext:value-type="string">
+            <text:p>р54</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="ce16" office:value-type="string" calcext:value-type="string">
+            <text:p>р56</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="ce16" office:value-type="string" calcext:value-type="string">
+            <text:p>р58</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="ce16" office:value-type="string" calcext:value-type="string">
+            <text:p>р60</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="ce16" office:value-type="string" calcext:value-type="string">
+            <text:p>Всего</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="ce16" table:number-columns-repeated="2"/>
+          <table:table-cell table:number-columns-repeated="1007"/>
+        </table:table-row>
+        <table:table-row-group>
+          <table:table-row table:style-name="ro3">
+            <table:table-cell table:style-name="ce6" office:value-type="string" calcext:value-type="string">
+              <text:p>Цвет: св.розовый/св.малиновый</text:p>
+            </table:table-cell>
+            <table:table-cell table:number-columns-repeated="13"/>
+            <table:table-cell table:formula="of:=SUM([.E51:.N51])" office:value-type="float" office:value="0" calcext:value-type="float">
+              <text:p>0</text:p>
+            </table:table-cell>
+            <table:table-cell/>
+            <table:table-cell table:style-name="ce18" table:formula="of:=[.B50]*[.O51]" office:value-type="float" office:value="0" calcext:value-type="float">
+              <text:p>0,00</text:p>
+            </table:table-cell>
+            <table:table-cell table:number-columns-repeated="5"/>
+            <table:table-cell office:value-type="float" office:value="444874" calcext:value-type="float">
+              <text:p>444874</text:p>
+            </table:table-cell>
+            <table:table-cell office:value-type="float" office:value="5853" calcext:value-type="float">
+              <text:p>5853</text:p>
+            </table:table-cell>
+            <table:table-cell table:number-columns-repeated="1000"/>
+          </table:table-row>
+          <table:table-row table:style-name="ro4">
+            <table:table-cell table:style-name="ce7" office:value-type="string" calcext:value-type="string">
+              <text:p/>
+              <text:p/>
+              <text:p>Состав: 92% Хлопок 8% Эластан</text:p>
+            </table:table-cell>
+            <table:table-cell>
+              <draw:a xlink:type="simple" xlink:href="http://ftp.acewear.ru/public/Photo/44487458532.jpeg">
+                <draw:frame table:end-cell-address="'Белье женское'.F52" table:end-x="0.29mm" table:end-y="65.7mm" draw:z-index="28" draw:name="Picture 29" draw:style-name="gr1" draw:text-style-name="P1" svg:width="49.23mm" svg:height="65.43mm" svg:x="19.31mm" svg:y="0.27mm">
+                  <draw:image xlink:href="Pictures/10000000000003E80000057849AB3BC8953F4DB0.jpg" xlink:type="simple" xlink:show="embed" xlink:actuate="onLoad">
+                    <text:p/>
+                  </draw:image>
+                  <svg:desc>temp82550</svg:desc>
+                </draw:frame>
+              </draw:a>
+            </table:table-cell>
+            <table:table-cell table:number-columns-repeated="5"/>
+            <table:table-cell>
+              <draw:a xlink:type="simple" xlink:href="http://ftp.acewear.ru/public/Photo/44487458533.jpeg">
+                <draw:frame table:end-cell-address="'Белье женское'.M52" table:end-x="0.57mm" table:end-y="65.7mm" draw:z-index="29" draw:name="Picture 30" draw:style-name="gr1" draw:text-style-name="P1" svg:width="49.19mm" svg:height="65.43mm" svg:x="4.47mm" svg:y="0.27mm">
+                  <draw:image xlink:href="Pictures/10000000000003E8000005786D5D9160F8869F7E.jpg" xlink:type="simple" xlink:show="embed" xlink:actuate="onLoad">
+                    <text:p/>
+                  </draw:image>
+                  <svg:desc>temp82550</svg:desc>
+                </draw:frame>
+              </draw:a>
+            </table:table-cell>
+            <table:table-cell table:number-columns-repeated="6"/>
+            <table:table-cell>
+              <draw:a xlink:type="simple" xlink:href="http://ftp.acewear.ru/public/Photo/44487458531.jpeg">
+                <draw:frame table:end-cell-address="'Белье женское'.Q52" table:end-x="2.29mm" table:end-y="65.7mm" draw:z-index="30" draw:name="Picture 31" draw:style-name="gr1" draw:text-style-name="P1" svg:width="49.28mm" svg:height="65.43mm" svg:x="4.76mm" svg:y="0.27mm">
+                  <draw:image xlink:href="Pictures/10000000000003E800000578877AB06F075D8F8A.jpg" xlink:type="simple" xlink:show="embed" xlink:actuate="onLoad">
+                    <text:p/>
+                  </draw:image>
+                  <svg:desc>temp82550</svg:desc>
+                </draw:frame>
+              </draw:a>
+            </table:table-cell>
+            <table:table-cell table:number-columns-repeated="1009"/>
+          </table:table-row>
+        </table:table-row-group>
+        <table:table-row table:style-name="ro3">
+          <table:table-cell office:value-type="string" calcext:value-type="string">
+            <text:p>Итого</text:p>
+          </table:table-cell>
+          <table:table-cell table:number-columns-repeated="13"/>
+          <table:table-cell table:formula="of:=SUM([.O51:.O52])" office:value-type="float" office:value="0" calcext:value-type="float">
+            <text:p>0</text:p>
+          </table:table-cell>
+          <table:table-cell/>
+          <table:table-cell table:style-name="ce18" table:formula="of:=SUM([.Q51:.Q52])" office:value-type="float" office:value="0" calcext:value-type="float">
+            <text:p>0,00</text:p>
+          </table:table-cell>
+          <table:table-cell table:number-columns-repeated="1007"/>
+        </table:table-row>
+        <table:table-row table:style-name="ro3">
+          <table:table-cell table:style-name="ce5" office:value-type="string" calcext:value-type="string">
+            <text:p>CLE SH545 Шорты жен.Сказ. Лес</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="ce13" office:value-type="float" office:value="140" calcext:value-type="float">
+            <text:p>140,00</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="ce16" table:number-columns-repeated="2"/>
+          <table:table-cell table:style-name="ce16" office:value-type="string" calcext:value-type="string">
+            <text:p>р42</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="ce16" office:value-type="string" calcext:value-type="string">
+            <text:p>р44</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="ce16" office:value-type="string" calcext:value-type="string">
+            <text:p>р46</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="ce16" office:value-type="string" calcext:value-type="string">
+            <text:p>р48</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="ce16" office:value-type="string" calcext:value-type="string">
+            <text:p>р50</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="ce16" office:value-type="string" calcext:value-type="string">
+            <text:p>р52</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="ce16" office:value-type="string" calcext:value-type="string">
+            <text:p>р54</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="ce16" office:value-type="string" calcext:value-type="string">
+            <text:p>р56</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="ce16" office:value-type="string" calcext:value-type="string">
+            <text:p>р58</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="ce16" office:value-type="string" calcext:value-type="string">
+            <text:p>р60</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="ce16" office:value-type="string" calcext:value-type="string">
+            <text:p>Всего</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="ce16" table:number-columns-repeated="2"/>
+          <table:table-cell table:number-columns-repeated="1007"/>
+        </table:table-row>
+        <table:table-row-group>
+          <table:table-row table:style-name="ro3">
+            <table:table-cell table:style-name="ce6" office:value-type="string" calcext:value-type="string">
+              <text:p>Цвет: меланж бежевый/т.серый</text:p>
+            </table:table-cell>
+            <table:table-cell table:number-columns-repeated="13"/>
+            <table:table-cell table:formula="of:=SUM([.E55:.N55])" office:value-type="float" office:value="0" calcext:value-type="float">
+              <text:p>0</text:p>
+            </table:table-cell>
+            <table:table-cell/>
+            <table:table-cell table:style-name="ce18" table:formula="of:=[.B54]*[.O55]" office:value-type="float" office:value="0" calcext:value-type="float">
+              <text:p>0,00</text:p>
+            </table:table-cell>
+            <table:table-cell table:number-columns-repeated="5"/>
+            <table:table-cell office:value-type="float" office:value="444373" calcext:value-type="float">
+              <text:p>444373</text:p>
+            </table:table-cell>
+            <table:table-cell office:value-type="float" office:value="5810" calcext:value-type="float">
+              <text:p>5810</text:p>
+            </table:table-cell>
+            <table:table-cell table:number-columns-repeated="1000"/>
+          </table:table-row>
+          <table:table-row table:style-name="ro4">
+            <table:table-cell table:style-name="ce7" office:value-type="string" calcext:value-type="string">
+              <text:p/>
+              <text:p/>
+              <text:p>Состав: 92% Хлопок 8% Эластан</text:p>
+            </table:table-cell>
+            <table:table-cell>
+              <draw:a xlink:type="simple" xlink:href="http://ftp.acewear.ru/public/Photo/44437358101.jpeg">
+                <draw:frame table:end-cell-address="'Белье женское'.F56" table:end-x="0.29mm" table:end-y="65.69mm" draw:z-index="31" draw:name="Picture 32" draw:style-name="gr1" draw:text-style-name="P1" svg:width="49.23mm" svg:height="65.43mm" svg:x="19.31mm" svg:y="0.26mm">
+                  <draw:image xlink:href="Pictures/10000000000003E8000005785957217848B4B87E.jpg" xlink:type="simple" xlink:show="embed" xlink:actuate="onLoad">
+                    <text:p/>
+                  </draw:image>
+                  <svg:desc>temp82550</svg:desc>
+                </draw:frame>
+              </draw:a>
+            </table:table-cell>
+            <table:table-cell table:number-columns-repeated="5"/>
+            <table:table-cell>
+              <draw:a xlink:type="simple" xlink:href="http://ftp.acewear.ru/public/Photo/44437358102.jpeg">
+                <draw:frame table:end-cell-address="'Белье женское'.M56" table:end-x="0.57mm" table:end-y="65.69mm" draw:z-index="32" draw:name="Picture 33" draw:style-name="gr1" draw:text-style-name="P1" svg:width="49.19mm" svg:height="65.43mm" svg:x="4.47mm" svg:y="0.26mm">
+                  <draw:image xlink:href="Pictures/10000000000003E800000578803DE2E2EFE1CE94.jpg" xlink:type="simple" xlink:show="embed" xlink:actuate="onLoad">
+                    <text:p/>
+                  </draw:image>
+                  <svg:desc>temp82550</svg:desc>
+                </draw:frame>
+              </draw:a>
+            </table:table-cell>
+            <table:table-cell table:number-columns-repeated="1016"/>
+          </table:table-row>
+        </table:table-row-group>
+        <table:table-row table:style-name="ro3">
+          <table:table-cell office:value-type="string" calcext:value-type="string">
+            <text:p>Итого</text:p>
+          </table:table-cell>
+          <table:table-cell table:number-columns-repeated="13"/>
+          <table:table-cell table:formula="of:=SUM([.O55:.O56])" office:value-type="float" office:value="0" calcext:value-type="float">
+            <text:p>0</text:p>
+          </table:table-cell>
+          <table:table-cell/>
+          <table:table-cell table:style-name="ce18" table:formula="of:=SUM([.Q55:.Q56])" office:value-type="float" office:value="0" calcext:value-type="float">
+            <text:p>0,00</text:p>
+          </table:table-cell>
+          <table:table-cell table:number-columns-repeated="1007"/>
+        </table:table-row>
+        <table:table-row table:style-name="ro3">
+          <table:table-cell table:style-name="ce5" office:value-type="string" calcext:value-type="string">
+            <text:p>CLE SH545/1 Шорты жен.Сказ.Лес</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="ce13" office:value-type="float" office:value="140" calcext:value-type="float">
+            <text:p>140,00</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="ce16" table:number-columns-repeated="2"/>
+          <table:table-cell table:style-name="ce16" office:value-type="string" calcext:value-type="string">
+            <text:p>р42</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="ce16" office:value-type="string" calcext:value-type="string">
+            <text:p>р44</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="ce16" office:value-type="string" calcext:value-type="string">
+            <text:p>р46</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="ce16" office:value-type="string" calcext:value-type="string">
+            <text:p>р48</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="ce16" office:value-type="string" calcext:value-type="string">
+            <text:p>р50</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="ce16" office:value-type="string" calcext:value-type="string">
+            <text:p>р52</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="ce16" office:value-type="string" calcext:value-type="string">
+            <text:p>р54</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="ce16" office:value-type="string" calcext:value-type="string">
+            <text:p>р56</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="ce16" office:value-type="string" calcext:value-type="string">
+            <text:p>р58</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="ce16" office:value-type="string" calcext:value-type="string">
+            <text:p>р60</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="ce16" office:value-type="string" calcext:value-type="string">
+            <text:p>Всего</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="ce16" table:number-columns-repeated="2"/>
+          <table:table-cell table:number-columns-repeated="1007"/>
+        </table:table-row>
+        <table:table-row-group>
+          <table:table-row table:style-name="ro3">
+            <table:table-cell table:style-name="ce6" office:value-type="string" calcext:value-type="string">
+              <text:p>Цвет: св.розовый</text:p>
+            </table:table-cell>
+            <table:table-cell table:number-columns-repeated="13"/>
+            <table:table-cell table:formula="of:=SUM([.E59:.N59])" office:value-type="float" office:value="0" calcext:value-type="float">
+              <text:p>0</text:p>
+            </table:table-cell>
+            <table:table-cell/>
+            <table:table-cell table:style-name="ce18" table:formula="of:=[.B58]*[.O59]" office:value-type="float" office:value="0" calcext:value-type="float">
+              <text:p>0,00</text:p>
+            </table:table-cell>
+            <table:table-cell table:number-columns-repeated="5"/>
+            <table:table-cell office:value-type="float" office:value="444655" calcext:value-type="float">
+              <text:p>444655</text:p>
+            </table:table-cell>
+            <table:table-cell office:value-type="float" office:value="5890" calcext:value-type="float">
+              <text:p>5890</text:p>
+            </table:table-cell>
+            <table:table-cell table:number-columns-repeated="1000"/>
+          </table:table-row>
+          <table:table-row table:style-name="ro4">
+            <table:table-cell table:style-name="ce7" office:value-type="string" calcext:value-type="string">
+              <text:p/>
+              <text:p/>
+              <text:p>Состав: 92% Хлопок 8% Эластан</text:p>
+            </table:table-cell>
+            <table:table-cell>
+              <draw:a xlink:type="simple" xlink:href="http://ftp.acewear.ru/public/Photo/44465558902.jpeg">
+                <draw:frame table:end-cell-address="'Белье женское'.F60" table:end-x="0.29mm" table:end-y="65.7mm" draw:z-index="33" draw:name="Picture 34" draw:style-name="gr1" draw:text-style-name="P1" svg:width="49.23mm" svg:height="65.44mm" svg:x="19.31mm" svg:y="0.26mm">
+                  <draw:image xlink:href="Pictures/10000000000003E80000057844681CCDEDD2F097.jpg" xlink:type="simple" xlink:show="embed" xlink:actuate="onLoad">
+                    <text:p/>
+                  </draw:image>
+                  <svg:desc>temp82550</svg:desc>
+                </draw:frame>
+              </draw:a>
+            </table:table-cell>
+            <table:table-cell table:number-columns-repeated="2"/>
+            <table:table-cell office:value-type="string" calcext:value-type="string">
+              <text:p>*</text:p>
+            </table:table-cell>
+            <table:table-cell table:number-columns-repeated="2"/>
+            <table:table-cell>
+              <draw:a xlink:type="simple" xlink:href="http://ftp.acewear.ru/public/Photo/44465558901.jpeg">
+                <draw:frame table:end-cell-address="'Белье женское'.M60" table:end-x="0.57mm" table:end-y="65.7mm" draw:z-index="34" draw:name="Picture 35" draw:style-name="gr1" draw:text-style-name="P1" svg:width="49.19mm" svg:height="65.44mm" svg:x="4.47mm" svg:y="0.26mm">
+                  <draw:image xlink:href="Pictures/10000000000003E800000578BB5484C0E80B3F70.jpg" xlink:type="simple" xlink:show="embed" xlink:actuate="onLoad">
+                    <text:p/>
+                  </draw:image>
+                  <svg:desc>temp82550</svg:desc>
+                </draw:frame>
+              </draw:a>
+            </table:table-cell>
+            <table:table-cell table:number-columns-repeated="1016"/>
+          </table:table-row>
+        </table:table-row-group>
+        <table:table-row table:style-name="ro3">
+          <table:table-cell office:value-type="string" calcext:value-type="string">
+            <text:p>Итого</text:p>
+          </table:table-cell>
+          <table:table-cell table:number-columns-repeated="13"/>
+          <table:table-cell table:formula="of:=SUM([.O59:.O60])" office:value-type="float" office:value="0" calcext:value-type="float">
+            <text:p>0</text:p>
+          </table:table-cell>
+          <table:table-cell/>
+          <table:table-cell table:style-name="ce18" table:formula="of:=SUM([.Q59:.Q60])" office:value-type="float" office:value="0" calcext:value-type="float">
+            <text:p>0,00</text:p>
+          </table:table-cell>
+          <table:table-cell table:number-columns-repeated="1007"/>
+        </table:table-row>
+        <table:table-row table:style-name="ro3">
+          <table:table-cell table:style-name="ce8" office:value-type="string" calcext:value-type="string">
+            <text:p>Итого</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="ce14" table:number-columns-repeated="13"/>
+          <table:table-cell table:style-name="ce17" table:formula="of:=SUM([.O1:.O61])/2" office:value-type="float" office:value="0" calcext:value-type="float">
+            <text:p>0,00</text:p>
+          </table:table-cell>
+          <table:table-cell table:style-name="ce14"/>
+          <table:table-cell table:style-name="ce17" table:formula="of:=SUM([.Q1:.Q61])/2" office:value-type="float" office:value="0" calcext:value-type="float">
+            <text:p>0,00</text:p>
+          </table:table-cell>
+          <table:table-cell table:number-columns-repeated="1007"/>
+        </table:table-row>
+        <table:table-row table:style-name="ro3" table:number-rows-repeated="1048513">
+          <table:table-cell table:number-columns-repeated="1024"/>
+        </table:table-row>
+        <table:table-row table:style-name="ro3">
+          <table:table-cell table:number-columns-repeated="1024"/>
+        </table:table-row>
+      </table:table>
+      <table:table table:name="Выборка по товарам" table:style-name="ta2">
+        <table:table-column table:style-name="co7" table:default-cell-style-name="Default"/>
+        <table:table-column table:style-name="co8" table:default-cell-style-name="ce19"/>
+        <table:table-column table:style-name="co7" table:number-columns-repeated="1022" table:default-cell-style-name="Default"/>
+        <table:table-row table:style-name="ro5">
+          <table:table-cell table:number-columns-repeated="1024"/>
+        </table:table-row>
+        <table:table-row table:style-name="ro5">
+          <table:table-cell/>
+          <table:table-cell office:value-type="string" calcext:value-type="string">
+            <text:p>Артикул</text:p>
+          </table:table-cell>
+          <table:table-cell table:number-columns-repeated="1022"/>
+        </table:table-row>
+        <table:table-row table:style-name="ro5">
+          <table:table-cell table:number-columns-repeated="1024"/>
+        </table:table-row>
+        <table:table-row table:style-name="ro3">
+          <table:table-cell/>
+          <table:table-cell table:style-name="ce20" office:value-type="string" calcext:value-type="string">
+            <text:p>Белье женское</text:p>
+          </table:table-cell>
+          <table:table-cell table:number-columns-repeated="1022"/>
+        </table:table-row>
+        <table:table-row table:style-name="ro5">
+          <table:table-cell table:style-name="ce19" office:value-type="string" calcext:value-type="string">
+            <text:p>CLE B545 Бикини жен.Сказ.Лес</text:p>
+          </table:table-cell>
+          <table:table-cell table:number-columns-repeated="1023"/>
+        </table:table-row>
+        <table:table-row table:style-name="ro5">
+          <table:table-cell table:style-name="ce19" office:value-type="string" calcext:value-type="string">
+            <text:p>CLE B545/1 Бикини жен.Сказ.Леc</text:p>
+          </table:table-cell>
+          <table:table-cell table:number-columns-repeated="1023"/>
+        </table:table-row>
+        <table:table-row table:style-name="ro5">
+          <table:table-cell table:style-name="ce19" office:value-type="string" calcext:value-type="string">
+            <text:p>CLE B545/2 Бикини жен.Сказ.Леc</text:p>
+          </table:table-cell>
+          <table:table-cell table:number-columns-repeated="1023"/>
+        </table:table-row>
+        <table:table-row table:style-name="ro5">
+          <table:table-cell table:style-name="ce19" office:value-type="string" calcext:value-type="string">
+            <text:p>CLE BR545/2 Бразилиано жен.Ска</text:p>
+          </table:table-cell>
+          <table:table-cell table:number-columns-repeated="1023"/>
+        </table:table-row>
+        <table:table-row table:style-name="ro5">
+          <table:table-cell table:style-name="ce19" office:value-type="string" calcext:value-type="string">
+            <text:p>CLE LDR16-545 Платье д.жен.Ска</text:p>
+          </table:table-cell>
+          <table:table-cell table:number-columns-repeated="1023"/>
+        </table:table-row>
+        <table:table-row table:style-name="ro5">
+          <table:table-cell table:style-name="ce19" office:value-type="string" calcext:value-type="string">
+            <text:p>CLE LF16-545-2 Джемпер жен.Ск</text:p>
+          </table:table-cell>
+          <table:table-cell table:number-columns-repeated="1023"/>
+        </table:table-row>
+        <table:table-row table:style-name="ro5">
+          <table:table-cell table:style-name="ce19" office:value-type="string" calcext:value-type="string">
+            <text:p>CLE LL16-545 Брюки жен.Сказ л</text:p>
+          </table:table-cell>
+          <table:table-cell table:number-columns-repeated="1023"/>
+        </table:table-row>
+        <table:table-row table:style-name="ro5">
+          <table:table-cell table:style-name="ce19" office:value-type="string" calcext:value-type="string">
+            <text:p>CLE LP16-545 Пижама жен.Сказ л</text:p>
+          </table:table-cell>
+          <table:table-cell table:number-columns-repeated="1023"/>
+        </table:table-row>
+        <table:table-row table:style-name="ro5">
+          <table:table-cell table:style-name="ce19" office:value-type="string" calcext:value-type="string">
+            <text:p>CLE LP16-545/1 Пижама жен.Сказ</text:p>
+          </table:table-cell>
+          <table:table-cell table:number-columns-repeated="1023"/>
+        </table:table-row>
+        <table:table-row table:style-name="ro5">
+          <table:table-cell table:style-name="ce19" office:value-type="string" calcext:value-type="string">
+            <text:p>CLE LP16-545/2 Пижама жен.Сказ</text:p>
+          </table:table-cell>
+          <table:table-cell table:number-columns-repeated="1023"/>
+        </table:table-row>
+        <table:table-row table:style-name="ro5">
+          <table:table-cell table:style-name="ce19" office:value-type="string" calcext:value-type="string">
+            <text:p>CLE LS16-545 Сорочка жен.Сказ</text:p>
+          </table:table-cell>
+          <table:table-cell table:number-columns-repeated="1023"/>
+        </table:table-row>
+        <table:table-row table:style-name="ro5">
+          <table:table-cell table:style-name="ce19" office:value-type="string" calcext:value-type="string">
+            <text:p>CLE LX16-545 Халат жен.Сказ Л</text:p>
+          </table:table-cell>
+          <table:table-cell table:number-columns-repeated="1023"/>
+        </table:table-row>
+        <table:table-row table:style-name="ro5">
+          <table:table-cell table:style-name="ce19" office:value-type="string" calcext:value-type="string">
+            <text:p>CLE SH545 Шорты жен.Сказ. Лес</text:p>
+          </table:table-cell>
+          <table:table-cell table:number-columns-repeated="1023"/>
+        </table:table-row>
+        <table:table-row table:style-name="ro5">
+          <table:table-cell table:style-name="ce19" office:value-type="string" calcext:value-type="string">
+            <text:p>CLE SH545/1 Шорты жен.Сказ.Лес</text:p>
+          </table:table-cell>
+          <table:table-cell table:number-columns-repeated="1023"/>
+        </table:table-row>
+        <table:table-row table:style-name="ro5" table:number-rows-repeated="1048557">
+          <table:table-cell table:number-columns-repeated="1024"/>
+        </table:table-row>
+        <table:table-row table:style-name="ro5">
+          <table:table-cell table:number-columns-repeated="1024"/>
+        </table:table-row>
+      </table:table>
+      <table:named-expressions/>
+    </office:spreadsheet>
+  </office:body>
+</office:document-content>

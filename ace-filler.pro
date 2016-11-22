@@ -10,7 +10,7 @@ CONFIG -= app_bundle
 TEMPLATE = app
 
 SOURCES += main.cpp \
-    acexmlreader.cpp
+    aceofferfiller.cpp
 
 HEADERS += \
-    acexmlreader.h
+    aceofferfiller.h

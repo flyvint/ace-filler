@@ -9,7 +9,6 @@ class AceOfferFiller
 {
     QString _filename;
     QDomDocument _doc;
-    int _maxRow;
 
     QList<QDomElement> _rows;
 
@@ -20,11 +19,13 @@ public:
     bool save();
 
     bool parse();
-    int maxRows() { return _maxRow; }
+    int maxRows() { return _rows.size(); }
     QString cellValue( int row, int column );
+    QString text( const QDomElement &el );
 
     bool parseTable();
     bool parseRow( QDomNode np );
+
 };
 
 #endif // ACEOFFERFILLER_H

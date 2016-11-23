@@ -82,10 +82,17 @@ void changeODS( const QString& odsfile )
         }
     }
 
+    qDebug( "parse" );
     if( ! parseContent( QString( "%1/%2" ).arg( tmpdir ).arg( "content.xml" ) ) ) {
         qDebug( "cant parse" );
         return;
     }
+
+    QString cmd= QString("cd \"%1\" && zip -r $(readlink -f \"%2\") .")
+            .arg( tmpdir )
+            .arg ( odsfile );
+    qDebug() <<  "save ods: " << cmd;
+    system( cmd.toLocal8Bit().constData() );
 }
 
 bool parseContent( const QString& xmlfile )
@@ -95,8 +102,7 @@ bool parseContent( const QString& xmlfile )
         return false;
 
     p.parse();
-
-//    p.save();
+    p.save();
 
     return true;
 }

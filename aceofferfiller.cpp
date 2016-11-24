@@ -43,32 +43,44 @@ bool AceOfferFiller::save( const QString& fname )
 bool AceOfferFiller::parse()
 {
     static QRegExp rexSize( "р[0-9][0-9]" );
+    static QString colorPrefix( "Цвет:" );
+
+    QMap<QString /*size*/, int /*column*/> size_column;
+    color_size_map_t& cur_art= _order.first();
 
     for( int r = 0; r < maxRows(); r++ ) {
-//        QString t = cellValue( r, 0 );
-//        if( t.contains( "CLE" ) ) {
-//            qDebug() << "found CLE:" << t << " on row:" << r;
+        QString cv = cellValue( r, 0 );
+        if( _order.contains( cv ) ) {
+            QString art= cv;
+            qDebug() << "found articul:" << art << " from order on row:" << r;
 
-//            for( int c = 1; c < 40; c++ ) {
-//                QString cv = cellValue( r, c );
-//                if( cv.contains( rexSize ) ) {
-//                    qDebug( " col:%d size:%s", c, cv.toLocal8Bit().data() );
-//                }
-//            }
+            size_column.clear();
+            for( int c = 1; c < 40; c++ ) {
+                QString cv = cellValue( r, c );
+                if( cv.contains( rexSize ) ) {
+                    qDebug( " col:%d size:%s", c, cv.toLocal8Bit().data() );
+                    cv.remove("р");
+                    size_column[cv]= c;
+                }
+            }
+        } else if( cv.contains( colorPrefix ) ) {
+            QString color= cv.remove( colorPrefix ).trimmed();
+            if( cur_art.contains( color ) ){
+                QString s= cur_art[ color ].size;
+                QString a= cur_art[ color ].amount;
 
-//        }
+                int sizecol= size_column[ s ];
 
+                qDebug() << "  set amount:" << a << " on cell:" << r << "," << sizecol;
+                setCellValue( r, sizecol, a );
+            }
+        }
 
-
-        //        qDebug( "%d,1=%s \t %d,14=%s",
-        //                r, cellValue( r, 1 ).toLocal8Bit().data(),
-        //                r, cellValue( r, 14 ).toLocal8Bit().data() );
     }
 
-    setCellValue( 4, 0, "Test" );
-    setCellValue( 4, 2, "Test222" );
+//    setCellValue( 4, 0, "Test" );
+//    setCellValue( 4, 2, "Test222" );
     save();
-//    save("out.xml");
 
     return true;
 }
@@ -145,26 +157,28 @@ bool AceOfferFiller::setCellValue( int row, int col, const QString& txt )
     QDomNode cellNode = getColumnNode( row, col, isRangeNode );
     if( isRangeNode ) {
         // if target column in "<table:table-cell table:number-columns-repeated=""/>"
-        QDomElement el= cellNode.toElement();
-        int colRepeat= el.toElement().attribute( "table:number-columns-repeated" ).toInt();
-        el.removeAttribute("table:number-columns-repeated");
+        QDomElement el = cellNode.toElement();
+        int colRepeat =
+            el.toElement().attribute( "table:number-columns-repeated" ).toInt();
+        el.removeAttribute( "table:number-columns-repeated" );
 
-        QDomNode parent= cellNode.parentNode();
+        QDomNode parent = cellNode.parentNode();
         Q_ASSERT( ! parent.isNull() );
 
-        for( int c= 1; c < colRepeat; c++ ){
-            QDomElement newCellNode= _doc.createElement( "table:table-cell" );
-            newCellNode.setAttribute( "table:style-name", el.attribute( "table:style-name" ) );
-            parent.insertAfter(newCellNode, cellNode );
+        for( int c = 1; c < colRepeat; c++ ) {
+            QDomElement newCellNode = _doc.createElement( "table:table-cell" );
+            newCellNode.setAttribute( "table:style-name",
+                                      el.attribute( "table:style-name" ) );
+            parent.insertAfter( newCellNode, cellNode );
 
-            QDomElement newCellNodeP= _doc.createElement( "text:p" );
-            newCellNode.appendChild(newCellNodeP);
+            QDomElement newCellNodeP = _doc.createElement( "text:p" );
+            newCellNode.appendChild( newCellNodeP );
 
-            QDomText newCellNodePText= _doc.createTextNode( "" );
-            newCellNodeP.appendChild(newCellNodePText);
+            QDomText newCellNodePText = _doc.createTextNode( "" );
+            newCellNodeP.appendChild( newCellNodePText );
         }
 
-        cellNode= getColumnNode( row, col, isRangeNode );
+        cellNode = getColumnNode( row, col, isRangeNode );
     }
 
     setCellText( cellNode, txt );
@@ -180,7 +194,7 @@ QDomElement& AceOfferFiller::rowElement( int row )
 QDomNode AceOfferFiller::getColumnNode( int row,
                                         int col, /* OUT */ bool& isRangeNode )
 {
-    isRangeNode= false;
+    isRangeNode = false;
 
     int curcol = 0;
 
@@ -199,15 +213,16 @@ QDomNode AceOfferFiller::getColumnNode( int row,
         colrange = el.attribute( "table:number-columns-repeated" );
 
         if( curcol == col ) {
-            if( ! colrange.isEmpty() )
-                isRangeNode= true;
+            if( ! colrange.isEmpty() ) {
+                isRangeNode = true;
+            }
             return n;
         }
 
         if( ! colrange.isEmpty() ) {
             int crange = colrange.toInt();
             if( curcol < col && col < ( curcol + crange ) ) {
-                isRangeNode= true;
+                isRangeNode = true;
                 return n;
             } else {
                 curcol += crange;
@@ -223,17 +238,72 @@ QDomNode AceOfferFiller::getColumnNode( int row,
 
 bool AceOfferFiller::setCellText( QDomNode cellNode, const QString& txt )
 {
-    static QString txtTag= "text:p";
-    QDomElement txtNode= cellNode.toElement().firstChildElement( txtTag );
-    while( ! txtNode.isNull() ){
+    static QString txtTag = "text:p";
+    QDomElement txtNode = cellNode.toElement().firstChildElement( txtTag );
+    while( ! txtNode.isNull() ) {
         cellNode.removeChild( txtNode );
-        txtNode= cellNode.toElement().firstChildElement( txtTag );
+        txtNode = cellNode.toElement().firstChildElement( txtTag );
     }
 
-    QDomElement elp= _doc.createElement( txtTag );
-    QDomText txtn= _doc.createTextNode( txt );
+    QDomElement elp = _doc.createElement( txtTag );
+    QDomText txtn = _doc.createTextNode( txt );
     cellNode.appendChild( elp );
     elp.appendChild( txtn );
 
     return true;
 }
+
+bool AceOfferFiller::loadOrder( const QString& orderfile )
+{
+    QFile f( orderfile );
+    if ( ! f.open( QIODevice::ReadOnly ) ) {
+        qCritical() << "cant load order file:" << orderfile << " " <<
+                    f.errorString();
+        return false;
+    }
+
+    QTextStream in( &f );
+    in.setCodec( "UTF-8" );
+    while ( !in.atEnd() ) {
+        QString line = in.readLine();
+
+        QStringList l = line.split( ';' );
+        qDebug() << l;
+
+        if( l[0] == "Наименование" ) {
+            continue;
+        }
+
+        order_line_t o;
+        o.articul = l[0].trimmed();
+        o.color = l[1].trimmed();
+        o.size = l[2];
+        o.amount = l[4];
+
+        color_size_map_t& csm= _order[o.articul];
+        csm[ o.color ]= o;
+
+        qDebug() << _order;
+    }
+
+    return true;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

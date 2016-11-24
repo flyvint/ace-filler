@@ -12,12 +12,12 @@
 
 #include "aceofferfiller.h"
 
-void changeODS( const QString& odsfile );
-bool parseContent( const QString& xmlfile );
+void changeODS( const QString& odsfile, const QString& orderfile );
+bool parseContent( const QString& xmlfile, const QString& orderfile );
 
 void usage()
 {
-    qFatal( "usage: %s ace.xls | ace.ods",
+    qFatal( "usage: %s ace.xls | ace.ods aceorder.csv",
             qApp->applicationName().toLocal8Bit().constData() );
 }
 
@@ -39,7 +39,7 @@ int main( int argc, char *argv[] )
 {
     QCoreApplication a( argc, argv );
 
-    if( argc < 2 ) {
+    if( argc < 3 ) {
         usage();
     }
 
@@ -58,12 +58,14 @@ int main( int argc, char *argv[] )
         usage();
     }
 
-    changeODS( infile );
+    QString orderfile = argv[2];
+
+    changeODS( infile, orderfile );
 
     return 0;
 }
 
-void changeODS( const QString& odsfile )
+void changeODS( const QString& odsfile, const QString& orderfile )
 {
     //    QString tmpdir= QString("~/tmp/ace-filler.%1.d").arg( odsfile );
     QString tmpdir = QString( "ace-filler.%1.d" ).arg( odsfile );
@@ -83,27 +85,31 @@ void changeODS( const QString& odsfile )
     }
 
     qDebug( "parse" );
-    if( ! parseContent( QString( "%1/%2" ).arg( tmpdir ).arg( "content.xml" ) ) ) {
+    if( ! parseContent( QString( "%1/%2" ).arg( tmpdir ).arg( "content.xml" ),
+                        orderfile ) ) {
         qDebug( "cant parse" );
         return;
     }
 
-    QString cmd= QString("cd \"%1\" && zip -r $(readlink -f \"%2\") .")
-            .arg( tmpdir )
-            .arg ( odsfile );
+    QString cmd = QString( "cd \"%1\" && zip -r \"%2\" ." )
+                  .arg( tmpdir )
+                  .arg( QDir::currentPath() + "/" + odsfile );
     qDebug() <<  "save ods: " << cmd;
     system( cmd.toLocal8Bit().constData() );
 }
 
-bool parseContent( const QString& xmlfile )
+bool parseContent( const QString& xmlfile, const QString& orderfile )
 {
     AceOfferFiller p;
-    if( ! p.load( xmlfile ) )
+    if( ! p.load( xmlfile ) ) {
         return false;
+    }
+    if( ! p.loadOrder( orderfile ) ) {
+        return false;
+    }
 
     p.parse();
     p.save();
 
     return true;
 }
-

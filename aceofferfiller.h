@@ -15,21 +15,24 @@ class AceOfferFiller
 
     typedef QString articul_t;
     typedef QString color_t;
+
     struct order_line_t {
+        typedef QString size_t;
+        typedef QString amount_t;
+
         articul_t articul;
         color_t   color;
-        QString   size;
-        QString   amount;
+        QMap<size_t, amount_t> size_amount_map;
 
         operator QString() const
         {
-            return QString( "%1:%2:%3:%4" ).
+            return QString( "%1:%2:%3" ).
                    arg( articul ).
                    arg( color ).
-                   arg( size ).
-                   arg( amount );
+                   arg( ( ( QStringList )size_amount_map.keys() ).join( "," ) );
         }
     };
+
     typedef QMap< color_t, order_line_t> color_size_map_t;
     QMap< articul_t, color_size_map_t > _order;
 

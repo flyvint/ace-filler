@@ -91,7 +91,7 @@ void changeODS( const QString& odsfile, const QString& orderfile )
         return;
     }
 
-    QString cmd = QString( "cd \"%1\" && zip -r \"%2\" ." )
+    QString cmd = QString( "cd \"%1\" && zip -q -r \"%2\" ." )
                   .arg( tmpdir )
                   .arg( QDir::currentPath() + "/" + odsfile );
     qDebug() <<  "save ods: " << cmd;

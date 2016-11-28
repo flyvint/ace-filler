@@ -14,7 +14,7 @@ bool AceOfferFiller::load( const QString& filename )
 
     QFile file( _filename );
     if ( ! file.open( QIODevice::ReadOnly ) ) {
-        qCritical() << "cant load file:" << _filename << " " << file.errorString();
+        qCritical() << "!!! не могу открыть файл:" << _filename << " " << file.errorString();
         return false;
     }
     if ( ! _doc.setContent( &file ) ) {
@@ -30,7 +30,7 @@ bool AceOfferFiller::save( const QString& fname )
 {
     QFile outf( fname.isEmpty() ? _filename : fname );
     if( ! outf.open( QIODevice::WriteOnly ) ) {
-        qCritical() << "cant open out file: " << outf.errorString();
+        qCritical() << "!!! не могу открыть файл: " << outf.errorString();
         return false;
     }
 
@@ -44,42 +44,65 @@ bool AceOfferFiller::parse()
 {
     static QRegExp rexSize( "р[0-9][0-9]" );
     static QString colorPrefix( "Цвет:" );
+    static color_size_map_t nul;
 
     QMap<QString /*size*/, int /*column*/> size_column;
-    color_size_map_t& cur_art= _order.first();
+    color_size_map_t& cur_color_size_map = nul;
+    QString cur_art;
 
     for( int r = 0; r < maxRows(); r++ ) {
         QString cv = cellValue( r, 0 );
         if( _order.contains( cv ) ) {
-            QString art= cv;
-            qDebug() << "found articul:" << art << " from order on row:" << r;
+            cur_art = cv;
+            cur_color_size_map= _order[cv];
+            qDebug() << "found articul:" << cur_art << " from order on row:" << r;
 
             size_column.clear();
             for( int c = 1; c < 40; c++ ) {
                 QString cv = cellValue( r, c );
                 if( cv.contains( rexSize ) ) {
-                    qDebug( " col:%d size:%s", c, cv.toLocal8Bit().data() );
-                    cv.remove("р");
-                    size_column[cv]= c;
+//                    qDebug( " col:%d size:%s", c, cv.toLocal8Bit().data() );
+                    cv.remove( "р" );
+                    size_column[cv] = c;
                 }
             }
-        } else if( cv.contains( colorPrefix ) ) {
-            QString color= cv.remove( colorPrefix ).trimmed();
-            if( cur_art.contains( color ) ){
-                QString s= cur_art[ color ].size;
-                QString a= cur_art[ color ].amount;
+        } else if( ( ! cur_art.isEmpty() ) && cv.contains( colorPrefix ) ) {
+            QString color = cv.remove( colorPrefix ).trimmed();
+            qDebug() << " color:" << color << " map:" << cur_color_size_map.keys();
+            if( cur_color_size_map.contains( color ) ) {
+                qDebug() << " found color:" << color;
+                foreach( order_line_t::size_t s,
+                         cur_color_size_map[color].size_amount_map.keys() ) {
+                    QString a = cur_color_size_map[color].size_amount_map[s];
 
-                int sizecol= size_column[ s ];
+                    int sizecol = size_column[ s ];
 
-                qDebug() << "  set amount:" << a << " on cell:" << r << "," << sizecol;
-                setCellValue( r, sizecol, a );
+                    qDebug() << "  set amount:" << a << " on size:" << s << " cell:" << r << "," << sizecol;
+                    setCellValue( r, sizecol, a );
+                    _order[cur_art][color].size_amount_map[s]= "done"; // mark item as processed
+                }
             }
+        } else if( cv.contains( "Итого" ) ) {
+            size_column.clear();
+            cur_color_size_map = _order.first();
+            cur_art.clear();
         }
-
     }
 
-//    setCellValue( 4, 0, "Test" );
-//    setCellValue( 4, 2, "Test222" );
+    foreach( color_size_map_t csm, _order ) {
+        foreach( order_line_t ol, csm ) {
+            foreach ( order_line_t::size_t s, ol.size_amount_map.keys() ) {
+                if( ol.size_amount_map[s] != "done" ) {
+                    qCritical( "!!! не найден в файле заказа: артикул[%s] цвет[%s] размер[%s]",
+                               qPrintable( ol.articul ),
+                               qPrintable( ol.color ),
+                               qPrintable( s ) );
+                }
+            }
+        }
+    }
+
+//    save( "out.xml" );
     save();
 
     return true;
@@ -158,6 +181,9 @@ bool AceOfferFiller::setCellValue( int row, int col, const QString& txt )
     if( isRangeNode ) {
         // if target column in "<table:table-cell table:number-columns-repeated=""/>"
         QDomElement el = cellNode.toElement();
+        QString styleAttr = el.attribute( "table:style-name" );
+        qDebug() <<  "   el style:" << styleAttr;
+
         int colRepeat =
             el.toElement().attribute( "table:number-columns-repeated" ).toInt();
         el.removeAttribute( "table:number-columns-repeated" );
@@ -167,8 +193,9 @@ bool AceOfferFiller::setCellValue( int row, int col, const QString& txt )
 
         for( int c = 1; c < colRepeat; c++ ) {
             QDomElement newCellNode = _doc.createElement( "table:table-cell" );
-            newCellNode.setAttribute( "table:style-name",
-                                      el.attribute( "table:style-name" ) );
+            if( ! styleAttr.isEmpty() )
+                newCellNode.setAttribute( "table:style-name",
+                                          styleAttr );
             parent.insertAfter( newCellNode, cellNode );
 
             QDomElement newCellNodeP = _doc.createElement( "text:p" );
@@ -236,9 +263,29 @@ QDomNode AceOfferFiller::getColumnNode( int row,
     return QDomNode();
 }
 
+
+QString valueType( const QString& txt )
+{
+    bool isOk;
+    txt.toFloat( &isOk );
+    if( isOk ) {
+        return "float";
+    }
+    return "string";
+}
+
 bool AceOfferFiller::setCellText( QDomNode cellNode, const QString& txt )
 {
     static QString txtTag = "text:p";
+
+    QDomElement cellEl = cellNode.toElement();
+    QString valType = valueType( txt );
+    cellEl.setAttribute( "office:value-type", valType );
+    cellEl.setAttribute( "calcext:value-type", valType );
+    if( valType == "float" ) {
+        cellEl.setAttribute( "office:value", txt );
+    }
+
     QDomElement txtNode = cellNode.toElement().firstChildElement( txtTag );
     while( ! txtNode.isNull() ) {
         cellNode.removeChild( txtNode );
@@ -266,44 +313,30 @@ bool AceOfferFiller::loadOrder( const QString& orderfile )
     in.setCodec( "UTF-8" );
     while ( !in.atEnd() ) {
         QString line = in.readLine();
-
-        QStringList l = line.split( ';' );
-        qDebug() << l;
-
-        if( l[0] == "Наименование" ) {
+        if( line.isEmpty() ) {
             continue;
         }
 
-        order_line_t o;
-        o.articul = l[0].trimmed();
-        o.color = l[1].trimmed();
-        o.size = l[2];
-        o.amount = l[4];
+        QStringList l = line.split( ';' );
+        qDebug() << "orderline: " << l;
 
-        color_size_map_t& csm= _order[o.articul];
-        csm[ o.color ]= o;
+        if( l.size() < 6 || l[0].contains( "Наименование" ) ) {
+            continue;
+        }
 
-        qDebug() << _order;
+        QString articul = l[0].trimmed();
+        QString color = l[1].trimmed();
+        QString size = l[2];
+        QString amount = l[4];
+
+        color_size_map_t& csm = _order[ articul ];
+        order_line_t& ol = csm[ color ];
+        ol.articul = articul;
+        ol.color = color;
+        ol.size_amount_map[ size ] = amount;
+
+        qDebug() << "order: " << articul << " " << csm;
     }
 
     return true;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

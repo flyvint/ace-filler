@@ -99,7 +99,10 @@ bool fill_ace_order( const QString& odsfile, const QString& orderfile )
     QDir tmpdird( tmpdir );
     tmpdird.removeRecursively();
 
-    system( QString( "mkdir -p %1" ).arg( tmpdir ).toLocal8Bit().constData() );
+    if( system( QString( "mkdir -p %1" ).arg( tmpdir ).toLocal8Bit().constData() ) != 0 ){
+	qCritical("!!! не могу создать временный каталог");
+	return false;
+    }
 
     QString cmd_unzip = QString( "unzip -q -o %1 -d %2" ).arg( ofi.absoluteFilePath() ).arg( tmpdir );
     qDebug() << "unzip cmd[" << cmd_unzip << "]";

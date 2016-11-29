@@ -15,7 +15,7 @@ msgpid=$!
 tmplog="/tmp/ace-filler.$$.log"
 outfile="${cleverfile%.xls}.out.xls"
 
-./ace-filler "$cleverfile" "$smfile" "$outfile" 2>&1 | tee $tmplog
+ace-filler "$cleverfile" "$smfile" "$outfile" 2>&1 | tee $tmplog
 retv=${PIPESTATUS[0]}
 kill $msgpid
 

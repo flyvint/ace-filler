@@ -24,6 +24,8 @@ class AceOfferFiller
         color_t   color;
         QMap<size_t, amount_t> size_amount_map;
 
+        QStringList lines;  /* строки из файла */
+
         operator QString() const
         {
             return QString( "%1:%2:%3" ).

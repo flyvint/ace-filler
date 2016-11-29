@@ -93,18 +93,18 @@ bool fill_ace_order( const QString& odsfile, const QString& orderfile )
 {
     QFileInfo ofi( odsfile );
 
-    QString tmpdir = QString( "%1/tmp/ace-filler.%2.d" ).arg( qgetenv("HOME").constData() ).arg( ofi.fileName() );
-    //    QString tmpdir = QString( "ace-filler.%1.d" ).arg( odsfile );
+    QString tmpdir = QString( "%1/tmp/ace-filler.%2.d" ).arg( qgetenv("HOME").constData() ).arg( getpid() ) ;
+    //    QString tmpdir = QString( "ace-filler.%1.d" ).arg( getpid );
 
     QDir tmpdird( tmpdir );
     tmpdird.removeRecursively();
 
-    if( system( QString( "mkdir -p %1" ).arg( tmpdir ).toLocal8Bit().constData() ) != 0 ){
-	qCritical("!!! не могу создать временный каталог");
-	return false;
+    if( system( qPrintable( QString( "mkdir -p \"%1\"" ).arg( tmpdir ) ) ) != 0 ){
+        qCritical("!!! не могу создать временный каталог");
+        return false;
     }
 
-    QString cmd_unzip = QString( "unzip -q -o %1 -d %2" ).arg( ofi.absoluteFilePath() ).arg( tmpdir );
+    QString cmd_unzip = QString( "unzip -q -o \"%1\" -d \"%2\"" ).arg( ofi.absoluteFilePath() ).arg( tmpdir );
     qDebug() << "unzip cmd[" << cmd_unzip << "]";
 
     if( system( cmd_unzip.toLocal8Bit().constData() ) != 0 ) {
@@ -141,6 +141,7 @@ bool parse_ods_content( const QString& xmlfile, const QString& orderfile )
 
     p.parse();
     p.save();
+    p.saveUnprocessedOrders( orderfile );
 
     return true;
 }

@@ -1,5 +1,7 @@
 #!/bin/bash
 
+export PATH=$HOME/bin:$PATH
+
 cleverfile=$( kdialog --title "Файл заказа Clever" --getopenfilename $HOME "application/vnd.ms-excel application/vnd.oasis.opendocument.spreadsheet" )
 [[ $? != "0" ]] && exit 1
 

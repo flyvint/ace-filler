@@ -2,6 +2,7 @@
 
 #include <QFile>
 #include <QDebug>
+#include <QRegularExpression>
 
 AceOfferFiller::AceOfferFiller()
 {
@@ -88,21 +89,6 @@ bool AceOfferFiller::parse()
             cur_art.clear();
         }
     }
-
-    qDebug() << "";
-    foreach( color_size_map_t csm, _order ) {
-        foreach( order_line_t ol, csm ) {
-            foreach ( order_line_t::size_t s, ol.size_amount_map.keys() ) {
-                if( ol.size_amount_map[s] != "done" ) {
-                    qCritical( "!!! не найден в файле заказа: артикул[%s] цвет[%s] размер[%s]",
-                               qPrintable( ol.articul ),
-                               qPrintable( ol.color ),
-                               qPrintable( s ) );
-                }
-            }
-        }
-    }
-    qDebug() << "";
 
 //    save( "out.xml" );
     save();
@@ -269,7 +255,8 @@ QDomNode AceOfferFiller::getColumnNode( int row,
 QString valueType( const QString& txt )
 {
     bool isOk;
-    txt.toFloat( &isOk );
+    QString t= txt;
+    t.toFloat( &isOk );
     if( isOk ) {
         return "float";
     }
@@ -281,6 +268,7 @@ bool AceOfferFiller::setCellText( QDomNode cellNode, const QString& txt )
     static QString txtTag = "text:p";
 
     QDomElement cellEl = cellNode.toElement();
+
     QString valType = valueType( txt );
     cellEl.setAttribute( "office:value-type", valType );
     cellEl.setAttribute( "calcext:value-type", valType );
@@ -312,7 +300,8 @@ bool AceOfferFiller::loadOrder( const QString& orderfile )
     }
 
     QTextStream in( &f );
-    in.setCodec( "UTF-8" );
+//    in.setCodec( "UTF-8" );
+    in.setCodec( "CP1251" );
     while ( !in.atEnd() ) {
         QString line = in.readLine();
         if( line.isEmpty() ) {
@@ -330,15 +319,45 @@ bool AceOfferFiller::loadOrder( const QString& orderfile )
         QString color = l[1].trimmed();
         QString size = l[2];
         QString amount = l[4];
+        amount.remove( QRegularExpression(",.*") );
 
         color_size_map_t& csm = _order[ articul ];
         order_line_t& ol = csm[ color ];
         ol.articul = articul;
         ol.color = color;
         ol.size_amount_map[ size ] = amount;
+        ol.lines.append( line );
 
         qDebug() << "order: " << articul << " " << csm;
     }
 
     return true;
+}
+
+bool AceOfferFiller::saveUnprocessedOrders( const QString& orderfile )
+{
+    QFile fo( orderfile );
+
+    if( ! fo.open( QIODevice::WriteOnly ) ){
+        qCritical("!!! cant open file:%s for writing", qPrintable(orderfile));
+        return false;
+    }
+
+    qDebug() << "";
+    foreach( color_size_map_t csm, _order ) {
+        foreach( order_line_t ol, csm ) {
+            foreach ( order_line_t::size_t s, ol.size_amount_map.keys() ) {
+                if( ol.size_amount_map[s] != "done" ) {
+                    qCritical( "!!! не найден в файле заказа: артикул[%s] цвет[%s] размер[%s]",
+                               qPrintable( ol.articul ),
+                               qPrintable( ol.color ),
+                               qPrintable( s ) );
+                    fo.write( ol.lines )
+                }
+            }
+        }
+    }
+    qDebug() << "";
+
+    fo.close();
 }

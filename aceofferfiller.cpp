@@ -89,6 +89,7 @@ bool AceOfferFiller::parse()
         }
     }
 
+    qDebug() << "";
     foreach( color_size_map_t csm, _order ) {
         foreach( order_line_t ol, csm ) {
             foreach ( order_line_t::size_t s, ol.size_amount_map.keys() ) {
@@ -101,6 +102,7 @@ bool AceOfferFiller::parse()
             }
         }
     }
+    qDebug() << "";
 
 //    save( "out.xml" );
     save();
@@ -304,7 +306,7 @@ bool AceOfferFiller::loadOrder( const QString& orderfile )
 {
     QFile f( orderfile );
     if ( ! f.open( QIODevice::ReadOnly ) ) {
-        qCritical() << "cant load order file:" << orderfile << " " <<
+        qCritical() << "!!! не могу открыть файл заказа:" << orderfile << " " <<
                     f.errorString();
         return false;
     }

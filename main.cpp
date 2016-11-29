@@ -12,22 +12,37 @@
 
 #include "aceofferfiller.h"
 
-void changeODS( const QString& odsfile, const QString& orderfile );
-bool parseContent( const QString& xmlfile, const QString& orderfile );
+bool fill_ace_order( const QString& odsfile, const QString& orderfile );
+bool parse_ods_content( const QString& xmlfile, const QString& orderfile );
 
 void usage()
 {
-    qFatal( "usage: %s ace.xls | ace.ods aceorder.csv",
+    qCritical( "usage: %s ace.xls | ace.ods aceorder.csv outfile.xls",
             qApp->applicationName().toLocal8Bit().constData() );
+    exit(1);
 }
 
-bool convert2ods( const QString& infile, const QString& outfile )
+bool convert_xls_to_ods( const QString& infile, const QString& outfile )
 {
-    QString cmd = "unoconv --format=ods -o " + outfile + " " + infile;
+    QString cmd = "unoconv --format=ods -o \"" + outfile + "\" \"" + infile + "\"";
     qDebug() << "convert " << infile << " cmd[" << cmd << "]";
     if( system( cmd.toLocal8Bit().constData() ) != 0 ) {
         if( system( cmd.toLocal8Bit().constData() ) != 0 ) {
-            qCritical( "cant convert to ods" );
+            qCritical( "!!! cant convert to ods" );
+            return false;
+        }
+    }
+
+    return true;
+}
+
+bool convert_ods_to_xls( const QString& infile, const QString& outfile )
+{
+    QString cmd = "unoconv --format=xls -o \"" + outfile + "\" \"" + infile + "\"";
+    qDebug() << "convert " << infile << " cmd[" << cmd << "]";
+    if( system( cmd.toLocal8Bit().constData() ) != 0 ) {
+        if( system( cmd.toLocal8Bit().constData() ) != 0 ) {
+            qCritical( "!!! cant convert to xls" );
             return false;
         }
     }
@@ -39,7 +54,7 @@ int main( int argc, char *argv[] )
 {
     QCoreApplication a( argc, argv );
 
-    if( argc < 3 ) {
+    if( argc < 4 ) {
         usage();
     }
 
@@ -48,9 +63,10 @@ int main( int argc, char *argv[] )
         QString outfile = infile;
         outfile.replace( ".xls", ".ods" );
 
-        if( ! QFile::exists( outfile ) ) {
-            convert2ods( infile, outfile );
+        if( ! convert_xls_to_ods( infile, outfile ) ){
+            return 1;
         }
+
         infile = outfile;
     }
 
@@ -59,46 +75,58 @@ int main( int argc, char *argv[] )
     }
 
     QString orderfile = argv[2];
+    QString outfile = argv[3];
 
-    changeODS( infile, orderfile );
+    if( ! fill_ace_order( infile, orderfile ) ){
+        qCritical( "!!! Ошибка при выполнении программы" );
+        return 1;
+    }
+
+    if( ! convert_ods_to_xls( infile, outfile ) ){
+        return 1;
+    }
 
     return 0;
 }
 
-void changeODS( const QString& odsfile, const QString& orderfile )
+bool fill_ace_order( const QString& odsfile, const QString& orderfile )
 {
-    //    QString tmpdir= QString("~/tmp/ace-filler.%1.d").arg( odsfile );
-    QString tmpdir = QString( "ace-filler.%1.d" ).arg( odsfile );
+    QFileInfo ofi( odsfile );
+
+    QString tmpdir = QString( "%1/tmp/ace-filler.%2.d" ).arg( qgetenv("HOME").constData() ).arg( ofi.fileName() );
+    //    QString tmpdir = QString( "ace-filler.%1.d" ).arg( odsfile );
 
     QDir tmpdird( tmpdir );
-    if( ! tmpdird.exists() ) {
+    tmpdird.removeRecursively();
 
-        system( QString( "mkdir -p %1" ).arg( tmpdir ).toLocal8Bit().constData() );
+    system( QString( "mkdir -p %1" ).arg( tmpdir ).toLocal8Bit().constData() );
 
-        QString cmd_unzip = QString( "unzip -o %1 -d %2" ).arg( odsfile ).arg( tmpdir );
-        qDebug() << "unzip cmd[" << cmd_unzip << "]";
+    QString cmd_unzip = QString( "unzip -q -o %1 -d %2" ).arg( ofi.absoluteFilePath() ).arg( tmpdir );
+    qDebug() << "unzip cmd[" << cmd_unzip << "]";
 
-        if( system( cmd_unzip.toLocal8Bit().constData() ) != 0 ) {
-            qWarning( "cant unzip: " );
-            return;
-        }
+    if( system( cmd_unzip.toLocal8Bit().constData() ) != 0 ) {
+        qCritical( "!!! cant unzip: %s", qPrintable( odsfile ) );
+        return false;
     }
 
-    qDebug( "parse" );
-    if( ! parseContent( QString( "%1/%2" ).arg( tmpdir ).arg( "content.xml" ),
+    qDebug( "parse file %s", qPrintable( odsfile ) );
+    if( ! parse_ods_content( QString( "%1/%2" ).arg( tmpdir ).arg( "content.xml" ),
                         orderfile ) ) {
         qDebug( "cant parse" );
-        return;
+        return false;
     }
 
     QString cmd = QString( "cd \"%1\" && zip -q -r \"%2\" ." )
                   .arg( tmpdir )
-                  .arg( QDir::currentPath() + "/" + odsfile );
+                  .arg( ofi.absoluteFilePath() );
     qDebug() <<  "save ods: " << cmd;
-    system( cmd.toLocal8Bit().constData() );
+    if(  system( cmd.toLocal8Bit().constData() ) != 0 )
+        return false;
+
+    return true;
 }
 
-bool parseContent( const QString& xmlfile, const QString& orderfile )
+bool parse_ods_content( const QString& xmlfile, const QString& orderfile )
 {
     AceOfferFiller p;
     if( ! p.load( xmlfile ) ) {

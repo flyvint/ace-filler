@@ -6,12 +6,15 @@
 #include <QList>
 #include <QMap>
 
+#define ORDER_FILE_CODEC "CP1251"
+
 class AceOfferFiller
 {
     QString _filename;
     QDomDocument _doc;
 
     QList<QDomElement> _rows;
+    int _processedOrdersCount;
 
     typedef QString articul_t;
     typedef QString color_t;
@@ -24,7 +27,7 @@ class AceOfferFiller
         color_t   color;
         QMap<size_t, amount_t> size_amount_map;
 
-        QStringList lines;  /* строки из файла */
+        QMap<size_t, QString> lines;  /* строки из файла */
 
         operator QString() const
         {
@@ -44,8 +47,16 @@ public:
     bool load( const QString& filename );
     bool loadOrder( const QString& orderfile );
     bool save( const QString& fname = QString() );
+    bool saveUnprocessedOrders( const QString& orderfile );
 
-    int maxRows()
+    bool parse();
+
+    int processedOrdersCount() const
+    {
+        return _processedOrdersCount;
+    }
+
+    int maxRows() const
     {
         return _rows.size();
     }
@@ -53,7 +64,6 @@ public:
     QString cellValue( int row, int column );
     bool setCellValue( int row, int col, const QString& txt );
 
-    bool parse();
 
 private:
     bool parseTable();

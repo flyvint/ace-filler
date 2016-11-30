@@ -4,9 +4,9 @@
 #include <QDebug>
 #include <QRegularExpression>
 
-AceOfferFiller::AceOfferFiller()
+AceOfferFiller::AceOfferFiller():
+    _processedOrdersCount(0)
 {
-
 }
 
 bool AceOfferFiller::load( const QString& filename )
@@ -81,6 +81,8 @@ bool AceOfferFiller::parse()
                     qDebug() << "  set amount:" << a << " on size:" << s << " cell:" << r << "," << sizecol;
                     setCellValue( r, sizecol, a );
                     _order[cur_art][color].size_amount_map[s]= "done"; // mark item as processed
+
+                    _processedOrdersCount++;
                 }
             }
         } else if( cv.contains( "Итого" ) ) {
@@ -89,9 +91,6 @@ bool AceOfferFiller::parse()
             cur_art.clear();
         }
     }
-
-//    save( "out.xml" );
-    save();
 
     return true;
 }
@@ -301,7 +300,7 @@ bool AceOfferFiller::loadOrder( const QString& orderfile )
 
     QTextStream in( &f );
 //    in.setCodec( "UTF-8" );
-    in.setCodec( "CP1251" );
+    in.setCodec( ORDER_FILE_CODEC );
     while ( !in.atEnd() ) {
         QString line = in.readLine();
         if( line.isEmpty() ) {
@@ -326,7 +325,7 @@ bool AceOfferFiller::loadOrder( const QString& orderfile )
         ol.articul = articul;
         ol.color = color;
         ol.size_amount_map[ size ] = amount;
-        ol.lines.append( line );
+        ol.lines[ size]= line;
 
         qDebug() << "order: " << articul << " " << csm;
     }
@@ -342,6 +341,8 @@ bool AceOfferFiller::saveUnprocessedOrders( const QString& orderfile )
         qCritical("!!! cant open file:%s for writing", qPrintable(orderfile));
         return false;
     }
+    QTextStream fos( &fo );
+    fos.setCodec( ORDER_FILE_CODEC );
 
     qDebug() << "";
     foreach( color_size_map_t csm, _order ) {
@@ -352,12 +353,13 @@ bool AceOfferFiller::saveUnprocessedOrders( const QString& orderfile )
                                qPrintable( ol.articul ),
                                qPrintable( ol.color ),
                                qPrintable( s ) );
-                    fo.write( ol.lines )
+
+                    fos << ol.lines[s] << endl;
                 }
             }
         }
     }
     qDebug() << "";
 
-    fo.close();
+    return true;
 }
